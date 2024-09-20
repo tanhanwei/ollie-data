@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     authButton.addEventListener('click', function() {
-        const redirectUri = 'https://dev-rynbpb65bndtk1ka.us.auth0.com/login/callback';
-        const authUrl = `https://id.worldcoin.org/authorize?client_id=${WORLD_ID_APP_ID}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=openid`;
+        const redirectUri = chrome.runtime.getURL('auth_callback.html');
+        const authUrl = `https://dev-rynbpb65bndtk1ka.us.auth0.com/authorize?client_id=${AUTH0_CLIENT_ID}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=openid&connection=World-ID`;
         chrome.tabs.create({ url: authUrl });
       });
   

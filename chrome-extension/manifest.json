@@ -4,9 +4,14 @@
     "version": "1.0",
     "description": "Collect browsing data while preserving user privacy",
     "permissions": [
-      "storage",
-      "activeTab",
-      "scripting"
+    "identity",
+    "storage",
+    "activeTab",
+    "scripting"
+    ],
+    "host_permissions": [
+    "https://id.worldcoin.org/*",
+    "https://dev-rynbpb65bndtk1ka.us.auth0.com/*"
     ],
     "action": {
       "default_popup": "popup.html"

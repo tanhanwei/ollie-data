@@ -2,22 +2,15 @@
 
 // Handle messages from content scripts and popup
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.type === 'auth_code') {
-      // Handle authentication code received from auth_callback.js
-      console.log('Received auth code:', request.code);
-      
-      // TODO: In a real application, you would send this code to your backend
-      // to exchange it for tokens and verify the user's identity
-      
-      // For this example, we'll just set the authenticated status to true
-      chrome.storage.local.set({authenticated: true}, function() {
-        sendResponse({success: true});
-        // Notify the popup that authentication was successful
-        chrome.runtime.sendMessage({type: 'auth_success'});
-      });
-      
-      return true; // Indicates that the response is sent asynchronously
-    }
+    if (request.type === 'auth_tokens') {
+        // Store the tokens securely
+        chrome.storage.local.set({auth_tokens: request.tokens, authenticated: true}, function() {
+          sendResponse({success: true});
+          // Notify the popup that authentication was successful
+          chrome.runtime.sendMessage({type: 'auth_success'});
+        });
+        return true; // Indicates that the response is sent asynchronously
+      }
     
     if (request.type === 'collected_data') {
       // Handle data received from content script
