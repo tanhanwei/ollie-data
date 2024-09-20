@@ -64,14 +64,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   
   // Listen for installation or update of the extension
   chrome.runtime.onInstalled.addListener(function(details) {
-    if (details.reason === "install" || details.reason === "update") {
-      // Initialize storage with default values
-      chrome.storage.local.set({
-        authenticated: false,
-        collectData: true,
-        collectedData: []
-      });
-    }
+    chrome.storage.local.set({
+      authenticated: false,
+      collectData: true,
+      collectedData: []
+    });
   });
   
   // Optional: Handle extension icon click

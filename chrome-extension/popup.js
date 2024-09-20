@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const authButton = document.getElementById('auth-button');
     const dataControl = document.getElementById('data-control');
     const debugButton = document.getElementById('debug-button');
+    const collectDataCheckbox = document.getElementById('collect-data');
+    const testButton = document.getElementById('test-button');
   
     function updateAuthStatus(isAuthenticated) {
       chrome.storage.local.set({authenticated: isAuthenticated}, function() {
@@ -34,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
           const url = new URL(redirectUrl);
           const code = url.searchParams.get('code');
           if (code) {
-            // Send the code to your background script to exchange for tokens
             chrome.runtime.sendMessage({type: 'auth_code', code: code}, function(response) {
               if (response && response.success) {
                 updateAuthStatus(true);
@@ -46,7 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     // Handle data collection toggle
-    const collectDataCheckbox = document.getElementById('collect-data');
+    chrome.storage.local.get('collectData', function(result) {
+      collectDataCheckbox.checked = result.collectData !== false;
+    });
     collectDataCheckbox.addEventListener('change', function() {
       chrome.storage.local.set({collectData: this.checked});
     });
@@ -55,7 +58,18 @@ document.addEventListener('DOMContentLoaded', function() {
     debugButton.addEventListener('click', function() {
       chrome.storage.local.get({collectedData: []}, function(result) {
         console.log('Collected Data:', result.collectedData);
-        alert('Collected data logged to console. Open developer tools to view.');
+        alert(`Collected ${result.collectedData.length} data points. Check console for details.`);
       });
     });
+  
+    // Test functionality
+    testButton.addEventListener('click', runTest);
   });
+  
+  function runTest() {
+    chrome.tabs.create({url: chrome.runtime.getURL('test.html')}, function(tab) {
+      setTimeout(function() {
+        chrome.tabs.sendMessage(tab.id, {action: "performTestActions"});
+      }, 1000);
+    });
+  }
