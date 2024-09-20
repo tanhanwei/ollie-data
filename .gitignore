@@ -29,3 +29,4 @@ yarn-error.log*
 
 # Marketplace Server
 /data-marketplace-server/node_modules
+/data-marketplace-server/.env
