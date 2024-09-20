@@ -11,7 +11,8 @@
     ],
     "host_permissions": [
     "https://id.worldcoin.org/*",
-    "https://dev-rynbpb65bndtk1ka.us.auth0.com/*"
+    "https://dev-rynbpb65bndtk1ka.us.auth0.com/*",
+    "http://localhost:3000/*"
     ],
     "action": {
       "default_popup": "popup.html"

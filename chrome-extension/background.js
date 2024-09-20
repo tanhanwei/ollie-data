@@ -43,36 +43,77 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         });
       });
     }
-  });
+
+    if (request.type === 'get_collect_data_setting') {
+      chrome.storage.local.get({collectData: true}, (result) => {
+        sendResponse({collectData: result.collectData});
+      });
+      return true;  // Indicates that the response is sent asynchronously
+    }
+});
   
-  // Optional: Periodic data syncing
-  function syncData() {
-    chrome.storage.local.get({collectedData: [], authenticated: false}, function(result) {
-      if (result.authenticated && result.collectedData.length > 0) {
-        // TODO: Here you would send the data to your backend
-        console.log('Syncing data:', result.collectedData);
-        
-        // After successful sync, you might want to clear the local storage
-        // Uncomment the following line when you implement actual syncing
-        // chrome.storage.local.set({collectedData: []});
-      }
+function syncData() {
+  chrome.storage.local.get({collectedData: [], authenticated: false}, function(result) {
+    if (result.authenticated && result.collectedData.length > 0) {
+      console.log('Syncing data:', result.collectedData);
+      
+      fetch('http://localhost:3000/store-data', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(result.collectedData),
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          console.log('Data stored on IPFS with CID:', data.cid);
+          // Clear the local storage after successful sync
+          chrome.storage.local.set({collectedData: []});
+        } else {
+          console.error('Failed to store data:', data.error);
+        }
+      })
+      .catch(error => {
+        console.error('Error syncing data:', error);
+      });
+    }
+  });
+}
+
+// Sync data every 30 seconds (30000 milliseconds)
+setInterval(syncData, 30000);
+
+// Listen for installation or update of the extension
+chrome.runtime.onInstalled.addListener(function(details) {
+  chrome.storage.local.set({
+    authenticated: false,
+    collectData: true,
+    collectedData: []
+  });
+});
+
+// Optional: Handle extension icon click
+chrome.action.onClicked.addListener(function(tab) {
+  // This will open the popup if it's not already open
+  chrome.action.openPopup();
+});
+
+// Handle setting changes
+chrome.storage.onChanged.addListener(function(changes, namespace) {
+  if (namespace === 'local' && 'collectData' in changes) {
+    // Notify all tabs about the setting change
+    chrome.tabs.query({}, function(tabs) {
+      tabs.forEach((tab) => {
+        try {
+          chrome.tabs.sendMessage(tab.id, {
+            action: "updateCollectData",
+            collectData: changes.collectData.newValue
+          });
+        } catch (error) {
+          console.error('Error sending message to tab:', tab.id, error);
+        }
+      });
     });
   }
-  
-  // Sync data every 5 minutes (300000 milliseconds)
-  setInterval(syncData, 300000);
-  
-  // Listen for installation or update of the extension
-  chrome.runtime.onInstalled.addListener(function(details) {
-    chrome.storage.local.set({
-      authenticated: false,
-      collectData: true,
-      collectedData: []
-    });
-  });
-  
-  // Optional: Handle extension icon click
-  chrome.action.onClicked.addListener(function(tab) {
-    // This will open the popup if it's not already open
-    chrome.action.openPopup();
-  });
+});

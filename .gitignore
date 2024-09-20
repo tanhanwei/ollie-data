@@ -26,3 +26,6 @@ yarn-error.log*
 # Chrome extension
 /chrome-extension/*.pem
 /chrome-extension/*.crx
+
+# Marketplace Server
+/data-marketplace-server/node_modules
