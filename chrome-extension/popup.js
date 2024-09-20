@@ -1,3 +1,5 @@
+// popup.js
+
 document.addEventListener('DOMContentLoaded', function() {
     const authStatus = document.getElementById('auth-status');
     const authButton = document.getElementById('auth-button');
@@ -18,10 +20,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
     authButton.addEventListener('click', function() {
-        const redirectUri = chrome.runtime.getURL('auth_callback.html');
-        const authUrl = `https://dev-rynbpb65bndtk1ka.us.auth0.com/authorize?client_id=${AUTH0_CLIENT_ID}&response_type=code&redirect_uri=${encodeURIComponent(redirectUri)}&scope=openid&connection=World-ID`;
-        chrome.tabs.create({ url: authUrl });
+      const redirectUrl = chrome.identity.getRedirectURL();
+      const clientId = AUTH0_CLIENT_ID;
+      const authUrl = `https://dev-rynbpb65bndtk1ka.us.auth0.com/authorize?client_id=${clientId}&response_type=code&redirect_uri=${encodeURIComponent(redirectUrl)}&scope=openid&connection=World-ID`;
+  
+      chrome.identity.launchWebAuthFlow({
+        url: authUrl,
+        interactive: true
+      }, function(redirectUrl) {
+        if (chrome.runtime.lastError) {
+          console.error(chrome.runtime.lastError);
+        } else {
+          const url = new URL(redirectUrl);
+          const code = url.searchParams.get('code');
+          if (code) {
+            // Send the code to your background script to exchange for tokens
+            chrome.runtime.sendMessage({type: 'auth_code', code: code}, function(response) {
+              if (response && response.success) {
+                updateAuthStatus(true);
+              }
+            });
+          }
+        }
       });
+    });
   
     // Handle data collection toggle
     const collectDataCheckbox = document.getElementById('collect-data');

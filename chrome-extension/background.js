@@ -2,15 +2,36 @@
 
 // Handle messages from content scripts and popup
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.type === 'auth_tokens') {
+    if (request.type === 'auth_code') {
+      // Exchange the code for tokens
+      const tokenUrl = 'https://dev-rynbpb65bndtk1ka.us.auth0.com/oauth/token';
+      const redirectUrl = chrome.identity.getRedirectURL();
+  
+      fetch(tokenUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          grant_type: 'authorization_code',
+          client_id: 'mInTjrehlcPtX1VooFCjNKHAIltAhuQo',
+          client_secret: '4xJmJwzH2rtCtvkYpvlR_hzhn4KqQPBZED3vwsQx-z7G3aeR9rn1jEoQugZHjuRK',
+          code: request.code,
+          redirect_uri: redirectUrl
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
         // Store the tokens securely
-        chrome.storage.local.set({auth_tokens: request.tokens, authenticated: true}, function() {
+        chrome.storage.local.set({auth_tokens: data, authenticated: true}, function() {
           sendResponse({success: true});
-          // Notify the popup that authentication was successful
-          chrome.runtime.sendMessage({type: 'auth_success'});
         });
-        return true; // Indicates that the response is sent asynchronously
-      }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        sendResponse({success: false, error: error.message});
+      });
+  
+      return true; // Indicates that the response is sent asynchronously
+    }
     
     if (request.type === 'collected_data') {
       // Handle data received from content script
