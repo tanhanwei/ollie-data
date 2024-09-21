@@ -52,6 +52,8 @@ const BuyerPage = () => {
             <tr className="bg-gray-100">
               <th className="border border-gray-300 p-2">Event Type</th>
               <th className="border border-gray-300 p-2">Timestamp</th>
+              <th className="border border-gray-300 p-2">Domain</th>
+              <th className="border border-gray-300 p-2">Owner</th>
               <th className="border border-gray-300 p-2">Actions</th>
             </tr>
           </thead>
@@ -62,6 +64,8 @@ const BuyerPage = () => {
                 <td className="border border-gray-300 p-2">
                   {item.event_timestamp ? new Date(item.event_timestamp).toLocaleString() : 'N/A'}
                 </td>
+                <td className="border border-gray-300 p-2">hidden</td>
+                <td className="border border-gray-300 p-2">hidden</td>
                 <td className="border border-gray-300 p-2">
                   <button 
                     onClick={() => processAndPurchase(item.id)}

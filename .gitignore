@@ -34,3 +34,12 @@ yarn-error.log*
 # Marketplace Frontend
 /data-marketplace-frontend/node_modules
 /data-marketplace-frontend/.env
+
+# Oasis Smart Contract
+/oasis-contracts/artifacts
+/oasis-contracts/cache
+/oasis-contracts/artifacts
+/oasis-contracts/node_modules
+/oasis-contracts/package-lock.json
+/oasis-contracts/.env
+/oasis-contracts/typechain-types
