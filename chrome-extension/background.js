@@ -1,8 +1,22 @@
 // background.js
 
+let jwtToken = null;
+
+// Function to decode JWT without verification
+function decodeJwt(token) {
+  const base64Url = token.split('.')[1];
+  const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+  const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+  }).join(''));
+
+  return JSON.parse(jsonPayload);
+}
+
 // Handle messages from content scripts and popup
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.type === 'auth_code') {
+      console.log('Received auth_code:', request.code);
       // Exchange the code for tokens
       const tokenUrl = 'https://dev-rynbpb65bndtk1ka.us.auth0.com/oauth/token';
       const redirectUrl = chrome.identity.getRedirectURL();
@@ -20,6 +34,22 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       })
       .then(response => response.json())
       .then(data => {
+        console.log('Received Auth0 tokens:', JSON.stringify(data, null, 2));
+        // Exchange Auth0 token for our own JWT
+        return fetch('http://localhost:3000/auth', {
+          method: 'POST',
+          headers: { 
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${data.id_token}`
+          },
+        });
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Received JWT from our server:', JSON.stringify(data, null, 2));
+        jwtToken = data.token;
+        const decodedJwt = decodeJwt(jwtToken);
+        console.log('Decoded JWT:', JSON.stringify(decodedJwt, null, 2));
         // Store the tokens securely
         chrome.storage.local.set({auth_tokens: data, authenticated: true}, function() {
           sendResponse({success: true});
@@ -53,33 +83,36 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
   
 function syncData() {
-  chrome.storage.local.get({collectedData: [], authenticated: false}, function(result) {
-    if (result.authenticated && result.collectedData.length > 0) {
-      console.log('Syncing data:', result.collectedData);
-      
-      fetch('http://localhost:3000/store-data', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(result.collectedData),
-      })
-      .then(response => response.json())
-      .then(data => {
-        if (data.success) {
-          console.log('Data stored on IPFS with CID:', data.cid);
-          // Clear the local storage after successful sync
-          chrome.storage.local.set({collectedData: []});
-        } else {
-          console.error('Failed to store data:', data.error);
-        }
-      })
-      .catch(error => {
-        console.error('Error syncing data:', error);
-      });
-    }
-  });
-}
+    chrome.storage.local.get({collectedData: [], authenticated: false}, function(result) {
+      if (result.authenticated && result.collectedData.length > 0 && jwtToken) {
+        console.log('Syncing data:', JSON.stringify(result.collectedData, null, 2));
+        
+        fetch('http://localhost:3000/store-data', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${jwtToken}`
+          },
+          body: JSON.stringify(result.collectedData),
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            console.log('Data stored on IPFS with CID:', data.cid);
+            // Clear the local storage after successful sync
+            chrome.storage.local.set({collectedData: []});
+          } else {
+            console.error('Failed to store data:', data.error);
+          }
+        })
+        .catch(error => {
+          console.error('Error syncing data:', error);
+        });
+      } else {
+        console.log('Not syncing data. Authenticated:', result.authenticated, 'Data points:', result.collectedData.length, 'JWT token exists:', !!jwtToken);
+      }
+    });
+  }
 
 // Sync data every 30 seconds (30000 milliseconds)
 setInterval(syncData, 30000);

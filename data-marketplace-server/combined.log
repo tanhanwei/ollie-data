@@ -25,3 +25,86 @@
 {"level":"info","message":"Stored data with CID:","service":"data-marketplace-server"}
 {"level":"info","message":"Stored data with CID: QmfMfXquxZeAEGwRGYua5DB1n5FBSs3xTaovXLG4ygZ9Bc","service":"data-marketplace-server"}
 {"level":"info","message":"Stored data with CID:","service":"data-marketplace-server"}
+{"level":"info","message":"Server running at http://localhost:3000","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID: QmNMWA7TCzmKmkCEoZFxyXPJZJMNzp9EYRRz2o5RcvJgw8","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID:","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID: QmV1o8d8sPr8EzoyJ3NvjqhQcGDszEjn9yuqkZZx3rTL4i","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID:","service":"data-marketplace-server"}
+{"level":"info","message":"Server running at http://localhost:3000","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID: QmcEcEbnc9wyMJEah75iodq9YwEbHwpZwNwDzeWwwNWfho","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID:","service":"data-marketplace-server"}
+{"level":"info","message":"Server running at http://localhost:3000","service":"data-marketplace-server"}
+{"level":"info","message":"Received authentication request","service":"data-marketplace-server"}
+{"level":"info","message":"Received Auth0 token:","service":"data-marketplace-server"}
+{"level":"info","message":"Decoded Auth0 token:","service":"data-marketplace-server"}
+{"level":"info","message":"Generated new JWT token","service":"data-marketplace-server"}
+{"level":"info","message":"Received request to store data","service":"data-marketplace-server"}
+{"level":"info","message":"Received data:","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID: QmQz3ckVcpDKzpZaFNDdK2pJ94jow3uMuVYxkApeKnYsNS","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID:","service":"data-marketplace-server"}
+{"level":"info","message":"Server running at http://localhost:3000","service":"data-marketplace-server"}
+{"level":"info","message":"Received authentication request","service":"data-marketplace-server"}
+{"level":"info","message":"Received Auth0 token: %s","service":"data-marketplace-server"}
+{"level":"info","message":"Decoded Auth0 token: %j","service":"data-marketplace-server"}
+{"level":"info","message":"Generated new JWT token: %s","service":"data-marketplace-server"}
+{"level":"info","message":"Server running at http://localhost:3000","service":"data-marketplace-server"}
+{"level":"info","message":"Received authentication request","service":"data-marketplace-server"}
+{"level":"info","message":"Received Auth0 token: %s","service":"data-marketplace-server"}
+{"level":"info","message":"Decoded Auth0 token: %j","service":"data-marketplace-server"}
+{"level":"info","message":"Extracted World ID info: %j","service":"data-marketplace-server"}
+{"level":"info","message":"Generated new JWT token: %s","service":"data-marketplace-server"}
+{"level":"info","message":"Received request to store data","service":"data-marketplace-server"}
+{"level":"info","message":"Received data: %j","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID: QmNwxzPdKxuFvzUpQUwnTA4mGK2reH75JVo9q8BQraxAPk","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID: %s","service":"data-marketplace-server"}
+{"level":"info","message":"Server running at http://localhost:3000","service":"data-marketplace-server"}
+{"level":"info","message":"Received authentication request","service":"data-marketplace-server"}
+{"level":"info","message":"Received Auth0 token: %s","service":"data-marketplace-server"}
+{"level":"info","message":"Decoded Auth0 token: %j","service":"data-marketplace-server"}
+{"level":"info","message":"Extracted World ID info: %j","service":"data-marketplace-server"}
+{"level":"info","message":"Generated new JWT token: %s","service":"data-marketplace-server"}
+{"level":"info","message":"Received request to store data","service":"data-marketplace-server"}
+{"level":"info","message":"Received data: %j","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID: QmPSSmGGUwjFGCpjEeydTRhPVjCvuK4wmoXFCJkH4E54xh","service":"data-marketplace-server"}
+{"level":"info","message":"Stored data with CID: %s","service":"data-marketplace-server"}
+2024-09-21T00:28:11.445Z info: Server running at http://localhost:3000 
+2024-09-21T00:28:34.320Z info: Received authentication request 
+2024-09-21T00:28:34.320Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjg3ODUxMywiZXhwIjoxNzI2OTE0NTEzLCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.p_p76XUIWUjdi0owEXLZmg4me-Fsg4nntYCJfBo86l2SRS4u-Nqq5UZpYg-pptYlOLgxG--fdzgdi1jFCyX2t-dspM9rCH0Zp5bRiOieUYJD7oQ6Qq-yQ1xhcsp06AW13QAwMjcqkockJwS4MdJNXMbTiukss_l4YKeuxoRnUuYdjgknBC96bF7qjlqUDPSeobZyAxPc4oavKUeM9FoAT8TmD8KYt0Ikc5xs_jjrrf403O1QwSTmt5NT3UckD7sIoqRFIB7I3ND9O7_IFcOvFjbbatye2R-p7tBvJthw3nq50ZwWm9BTuyeON97LJJXPxt6t1QcxN0wSlivnTCuhDg"
+}
+2024-09-21T00:28:34.321Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726878513,
+    "exp": 1726914513,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T00:28:34.321Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T00:28:34.323Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY4Nzg1MTQsImV4cCI6MTcyNjg4MjExNH0.vt0VoxyvjvbYa1sBS8Dtdz-U-3aWg1bcFiqtMA4YhRg"
+}
+2024-09-21T00:28:46.168Z info: Received request to store data 
+2024-09-21T00:28:46.169Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726878501074,
+      "pseudo_id": "user_hw7psg4oh",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T00:28:46.243Z info: Stored data with CID {
+  "cid": "QmdQSvqqthbp3s4t46zWDNN6PTJLKHdki3f77ynV3kFJWN"
+}
+2024-09-21T00:28:46.243Z info: Stored data with CID {
+  "cid": "QmdQSvqqthbp3s4t46zWDNN6PTJLKHdki3f77ynV3kFJWN"
+}
