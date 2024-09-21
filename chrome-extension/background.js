@@ -91,15 +91,8 @@ function syncData() {
     console.log('Sync check - Auth:', result.authenticated, 'Data points:', result.collectedData.length, 'Token exists:', !!result.token);
     if (result.authenticated && result.collectedData.length > 0 && result.token) {
       console.log('Token being sent:', result.token);
-      // Decode and log the token content
-      try {
-        const tokenParts = result.token.split('.');
-        const tokenPayload = JSON.parse(atob(tokenParts[1]));
-        console.log('Decoded token payload:', tokenPayload);
-      } catch (error) {
-        console.error('Error decoding token:', error);
-      }
-      
+      console.log('Data being sent to server:', result.collectedData); // New log
+
       const headers = {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${result.token}`
@@ -109,7 +102,7 @@ function syncData() {
       fetch('http://localhost:3000/store-data', {
         method: 'POST',
         headers: headers,
-        body: JSON.stringify(result.collectedData),
+        body: JSON.stringify({data: result.collectedData}), // Wrap in {data: ...}
       })
       .then(response => {
         if (!response.ok) {

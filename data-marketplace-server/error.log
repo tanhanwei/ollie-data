@@ -483,3 +483,23 @@
 2024-09-21T08:02:59.901Z error: Error retrieving data {
   "error": "Unexpected non-whitespace character after JSON at position 2 (line 1 column 3)"
 }
+2024-09-21T08:30:33.484Z error: JWT Error: jwt malformed {
+  "code": "invalid_token",
+  "status": 401,
+  "name": "UnauthorizedError",
+  "inner": {
+    "name": "JsonWebTokenError",
+    "message": "jwt malformed"
+  },
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T08:30:33.485Z error: JWT Error: jwt malformed {
+  "code": "invalid_token",
+  "status": 401,
+  "name": "UnauthorizedError",
+  "inner": {
+    "name": "JsonWebTokenError",
+    "message": "jwt malformed"
+  },
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}

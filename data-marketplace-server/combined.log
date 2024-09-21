@@ -3080,3 +3080,269 @@
   ],
   "errors": []
 }
+2024-09-21T08:30:33.484Z error: JWT Error: jwt malformed {
+  "code": "invalid_token",
+  "status": 401,
+  "name": "UnauthorizedError",
+  "inner": {
+    "name": "JsonWebTokenError",
+    "message": "jwt malformed"
+  },
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T08:30:33.485Z error: JWT Error: jwt malformed {
+  "code": "invalid_token",
+  "status": 401,
+  "name": "UnauthorizedError",
+  "inner": {
+    "name": "JsonWebTokenError",
+    "message": "jwt malformed"
+  },
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T08:30:41.157Z info: Received request to store data 
+2024-09-21T08:30:41.158Z info: Received data {
+  "data": [
+    {
+      "domain": "localhost",
+      "event_name": "page_view",
+      "event_timestamp": 1726907433490,
+      "pseudo_id": "user_ruf3adn6i",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T08:30:41.158Z info: Full request headers {
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "content-length": "140",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDYxOTgsImV4cCI6MTcyNjkwOTc5OH0.lOtaaMISiJrZvO8gihNheyc7UGAw82XmSZas8oIvgrE",
+  "accept": "*/*",
+  "origin": "chrome-extension://mmmaljibofhlnclinlnlphhbobkjfanf",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2024-09-21T08:30:41.158Z info: Full token payload {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726906198,
+  "exp": 1726909798
+}
+2024-09-21T08:30:41.158Z info: Owner nullifier hash {
+  "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+}
+2024-09-21T08:30:41.158Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"localhost\",\"event_name\":\"page_view\",\"event_timestamp\":1726907433490,\"pseudo_id\":\"user_ruf3adn6i\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"}]"
+}
+2024-09-21T08:30:41.223Z info: Stored data with CID {
+  "cid": "QmUQvBuMfX1rqjq3MEF4eYf4taxbLLP144kZjQUUXJ6eGF"
+}
+2024-09-21T08:30:41.227Z info: Added new CID to database: {
+  "cid": "QmUQvBuMfX1rqjq3MEF4eYf4taxbLLP144kZjQUUXJ6eGF"
+}
+2024-09-21T08:30:41.227Z info: Current contents of cids.json: {
+  "cids": "[\n  \"QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH\",\n  \"QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7\",\n  \"QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw\",\n  \"QmUQvBuMfX1rqjq3MEF4eYf4taxbLLP144kZjQUUXJ6eGF\"\n]"
+}
+2024-09-21T08:30:41.227Z info: Stored data with CID {
+  "cid": "QmUQvBuMfX1rqjq3MEF4eYf4taxbLLP144kZjQUUXJ6eGF"
+}
+2024-09-21T09:06:45.951Z info: Server running at http://localhost:3000 
+2024-09-21T09:06:45.953Z info: Testing IPFS connection 
+2024-09-21T09:06:45.972Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T09:06:45.972Z info: IPFS connection established 
+2024-09-21T09:07:21.409Z info: Received authentication request 
+2024-09-21T09:07:21.410Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwOTY0MCwiZXhwIjoxNzI2OTQ1NjQwLCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.b0NoqTg9pR9TzuyyHJYgxce4IvSg8iMPNnonh7aGCQgZOGrqvYskoJb7vdCh1EX9gxUCrhFPeMzy__EAfhx6OhwBoSSlof_aUpuDa5dJXh5MmfbZ8RtvHuXtKziFyjjTpF2AU5dnVioZmm7zYEtJgeUdya9l6kSlRPGlkE_ndP7dG8AoPdvFMZwCqL1PzlBWRKPQFNcdZY4H7VOKxwcULzSbNAca6WRwZzQWjShpgHW53a8AFmxgOe0lk8Cc9Nkt9-j47LVvc1ZIlf-fqvJEKcTvjLHdLppXAdhhyGg1hiWUvj-8SLSuDfR_B5TZHnLN08-tTBtgbzxKdOcgHDa17g"
+}
+2024-09-21T09:07:21.410Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726909640,
+    "exp": 1726945640,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T09:07:21.410Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T09:07:21.412Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDk2NDEsImV4cCI6MTcyNjkxMzI0MX0.V4n_x-lBGTITJlvtWG7E_KmmrSLNIXCnFyxbxvSO1nE"
+}
+2024-09-21T09:07:21.413Z info: Decoded generated JWT {
+  "decodedJWT": {
+    "worldIdInfo": {
+      "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    "iat": 1726909641,
+    "exp": 1726913241
+  }
+}
+2024-09-21T09:07:21.553Z info: Received request to store data 
+2024-09-21T09:07:21.553Z info: Received full body {
+  "fullBody": {
+    "data": [
+      {
+        "domain": "id.worldcoin.org",
+        "event_name": "page_view",
+        "event_timestamp": 1726909621612,
+        "pseudo_id": "user_0oj6thcxk",
+        "user_agent_hash": "-6e47b3f5"
+      }
+    ]
+  },
+  "dataProperty": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726909621612,
+      "pseudo_id": "user_0oj6thcxk",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ],
+  "isDataArray": true
+}
+2024-09-21T09:07:21.553Z info: Processed data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726909621612,
+      "pseudo_id": "user_0oj6thcxk",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T09:07:21.554Z info: Full request headers {
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "content-length": "156",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDk2NDEsImV4cCI6MTcyNjkxMzI0MX0.V4n_x-lBGTITJlvtWG7E_KmmrSLNIXCnFyxbxvSO1nE",
+  "accept": "*/*",
+  "origin": "chrome-extension://mmmaljibofhlnclinlnlphhbobkjfanf",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2024-09-21T09:07:21.554Z info: Full token payload {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726909641,
+  "exp": 1726913241
+}
+2024-09-21T09:07:21.554Z info: Owner nullifier hash {
+  "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+}
+2024-09-21T09:07:21.554Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"id.worldcoin.org\",\"event_name\":\"page_view\",\"event_timestamp\":1726909621612,\"pseudo_id\":\"user_0oj6thcxk\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"}]"
+}
+2024-09-21T09:07:21.615Z info: Stored data with CID {
+  "cid": "QmQyNDsXwfbFZCv2LQfGUxdyChWWGfuYZUTqDJ3Fxc7VZm"
+}
+2024-09-21T09:07:21.623Z info: Added new CID to database: {
+  "cid": "QmQyNDsXwfbFZCv2LQfGUxdyChWWGfuYZUTqDJ3Fxc7VZm"
+}
+2024-09-21T09:07:21.623Z info: Current contents of cids.json: {
+  "cids": "[\n  \"QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH\",\n  \"QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7\",\n  \"QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw\",\n  \"QmUQvBuMfX1rqjq3MEF4eYf4taxbLLP144kZjQUUXJ6eGF\",\n  \"QmQyNDsXwfbFZCv2LQfGUxdyChWWGfuYZUTqDJ3Fxc7VZm\"\n]"
+}
+2024-09-21T09:07:21.623Z info: Stored data with CID {
+  "cid": "QmQyNDsXwfbFZCv2LQfGUxdyChWWGfuYZUTqDJ3Fxc7VZm"
+}
+2024-09-21T09:07:51.552Z info: Received request to store data 
+2024-09-21T09:07:51.553Z info: Received full body {
+  "fullBody": {
+    "data": [
+      {
+        "domain": "www.ntu.edu.sg",
+        "event_name": "page_view",
+        "event_timestamp": 1726909654923,
+        "pseudo_id": "user_qwr0f35r0",
+        "user_agent_hash": "-6e47b3f5"
+      }
+    ]
+  },
+  "dataProperty": [
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726909654923,
+      "pseudo_id": "user_qwr0f35r0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ],
+  "isDataArray": true
+}
+2024-09-21T09:07:51.553Z info: Processed data {
+  "data": [
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726909654923,
+      "pseudo_id": "user_qwr0f35r0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T09:07:51.553Z info: Full request headers {
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "content-length": "154",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDk2NDEsImV4cCI6MTcyNjkxMzI0MX0.V4n_x-lBGTITJlvtWG7E_KmmrSLNIXCnFyxbxvSO1nE",
+  "accept": "*/*",
+  "origin": "chrome-extension://mmmaljibofhlnclinlnlphhbobkjfanf",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2024-09-21T09:07:51.553Z info: Full token payload {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726909641,
+  "exp": 1726913241
+}
+2024-09-21T09:07:51.553Z info: Owner nullifier hash {
+  "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+}
+2024-09-21T09:07:51.553Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"www.ntu.edu.sg\",\"event_name\":\"page_view\",\"event_timestamp\":1726909654923,\"pseudo_id\":\"user_qwr0f35r0\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"}]"
+}
+2024-09-21T09:07:51.610Z info: Stored data with CID {
+  "cid": "QmRviy4aZhTfebTQqXBgCbAHYp2qMN7XqVKD8htdFqEsiV"
+}
+2024-09-21T09:07:51.614Z info: Added new CID to database: {
+  "cid": "QmRviy4aZhTfebTQqXBgCbAHYp2qMN7XqVKD8htdFqEsiV"
+}
+2024-09-21T09:07:51.614Z info: Current contents of cids.json: {
+  "cids": "[\n  \"QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH\",\n  \"QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7\",\n  \"QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw\",\n  \"QmUQvBuMfX1rqjq3MEF4eYf4taxbLLP144kZjQUUXJ6eGF\",\n  \"QmQyNDsXwfbFZCv2LQfGUxdyChWWGfuYZUTqDJ3Fxc7VZm\",\n  \"QmRviy4aZhTfebTQqXBgCbAHYp2qMN7XqVKD8htdFqEsiV\"\n]"
+}
+2024-09-21T09:07:51.614Z info: Stored data with CID {
+  "cid": "QmRviy4aZhTfebTQqXBgCbAHYp2qMN7XqVKD8htdFqEsiV"
+}

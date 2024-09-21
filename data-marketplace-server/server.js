@@ -165,36 +165,42 @@ app.post('/auth', checkJwt, (req, res) => {
 
 // Protected route to store data
 app.post('/store-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }), async (req, res) => {
-  logger.info('Received request to store data');
-  try {
-    const data = req.body;
-    logger.info('Received data', { data });
-    logger.info('Full request headers', req.headers);
-    logger.info('Full token payload', req.auth);
-
-    if (!req.auth || !req.auth.worldIdInfo) {
-      logger.error('Token payload:', JSON.stringify(req.auth, null, 2));
-      throw new Error('User information not found in token');
+    logger.info('Received request to store data');
+    try {
+      logger.info('Received full body', { 
+        fullBody: req.body,
+        dataProperty: req.body.data,
+        isDataArray: Array.isArray(req.body.data)
+      });
+  
+      const data = req.body.data;
+      logger.info('Processed data', { data });
+      logger.info('Full request headers', req.headers);
+      logger.info('Full token payload', req.auth);
+  
+      if (!req.auth || !req.auth.worldIdInfo) {
+        logger.error('Token payload:', JSON.stringify(req.auth, null, 2));
+        throw new Error('User information not found in token');
+      }
+  
+      const ownerNullifierHash = req.auth.worldIdInfo.nullifier_hash;
+      logger.info('Owner nullifier hash', { ownerNullifierHash });
+  
+      // Assuming data is an array of events
+      const dataWithOwner = data.map(event => ({
+        ...event,
+        ownerNullifierHash
+      }));
+  
+      const cid = await storeDataOnIPFS(dataWithOwner);
+      await addCIDToDatabase(cid);
+      logger.info('Stored data with CID', { cid });
+      res.json({ success: true, cid });
+    } catch (error) {
+      logger.error('Error storing data', { error: error.message, stack: error.stack });
+      res.status(500).json({ success: false, error: error.message });
     }
-
-    const ownerNullifierHash = req.auth.worldIdInfo.nullifier_hash;
-    logger.info('Owner nullifier hash', { ownerNullifierHash });
-
-    // Assuming data is an array of events
-    const dataWithOwner = data.map(event => ({
-      ...event,
-      ownerNullifierHash
-    }));
-
-    const cid = await storeDataOnIPFS(dataWithOwner);
-    await addCIDToDatabase(cid);
-    logger.info('Stored data with CID', { cid });
-    res.json({ success: true, cid });
-  } catch (error) {
-    logger.error('Error storing data', { error: error.message, stack: error.stack });
-    res.status(500).json({ success: false, error: error.message });
-  }
-});
+  });
 
 // Route to retrieve data
 app.get('/retrieve-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }), async (req, res) => {
