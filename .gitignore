@@ -30,3 +30,7 @@ yarn-error.log*
 # Marketplace Server
 /data-marketplace-server/node_modules
 /data-marketplace-server/.env
+
+# Marketplace Frontend
+/data-marketplace-frontend/node_modules
+/data-marketplace-frontend/.env

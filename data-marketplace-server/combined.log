@@ -442,3 +442,573 @@
     }
   }
 }
+2024-09-21T04:23:32.198Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:24:02.103Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:24:02.546Z error: Server error {
+  "error": "No authorization token was found",
+  "stack": "UnauthorizedError: No authorization token was found\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:114:39\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:4:12)\n    at middleware (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:67:16)\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)"
+}
+2024-09-21T04:24:05.069Z error: Server error {
+  "error": "No authorization token was found",
+  "stack": "UnauthorizedError: No authorization token was found\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:114:39\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:4:12)\n    at middleware (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:67:16)\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)"
+}
+2024-09-21T04:24:32.102Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:25:02.107Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:25:32.102Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:26:02.107Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:26:32.099Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:27:02.103Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:27:32.098Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:28:02.100Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:28:32.102Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:29:02.100Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:29:32.097Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:30:02.097Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:30:32.097Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:31:02.099Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:31:32.099Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:32:02.096Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:36:29.985Z info: Server running at http://localhost:3000 
+2024-09-21T04:36:29.986Z info: Testing IPFS connection 
+2024-09-21T04:36:30.004Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T04:36:30.004Z info: IPFS connection established 
+2024-09-21T04:36:32.112Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:37:02.097Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:37:32.094Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:38:02.095Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T04:38:21.849Z info: Server running at http://localhost:3000 
+2024-09-21T04:38:21.851Z info: Testing IPFS connection 
+2024-09-21T04:38:21.869Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T04:38:21.869Z info: IPFS connection established 
+2024-09-21T04:38:32.112Z warn: JWT Error: {
+  "error": "jwt expired"
+}
+2024-09-21T04:39:02.093Z warn: JWT Error: {
+  "error": "jwt expired"
+}
+2024-09-21T04:39:32.095Z warn: JWT Error: {
+  "error": "jwt expired"
+}
+2024-09-21T04:40:02.126Z warn: JWT Error: {
+  "error": "jwt expired"
+}
+2024-09-21T04:41:19.902Z info: Received World ID authentication request 
+2024-09-21T04:41:19.903Z error: Error in World ID verification {
+  "error": "verifyProof is not a function"
+}
+2024-09-21T04:55:25.621Z info: Server running at http://localhost:3000 
+2024-09-21T04:55:25.622Z info: Testing IPFS connection 
+2024-09-21T04:55:25.640Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T04:55:25.640Z info: IPFS connection established 
+2024-09-21T05:05:59.705Z info: Server running at http://localhost:3000 
+2024-09-21T05:05:59.707Z info: Testing IPFS connection 
+2024-09-21T05:05:59.724Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T05:05:59.724Z info: IPFS connection established 
+2024-09-21T05:06:37.974Z info: Received authentication request 
+2024-09-21T05:06:37.974Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjg5NTE5NywiZXhwIjoxNzI2OTMxMTk3LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.lyu21r018jSZNqYM70kgIGMJFcjTK3WKdtZOLxKfssGGHnMxGLib7UuQOFJ038dMnQc5hfz0s2N920zH08MWIWHnv8dI-xJW6HRyv2ZTvi03lEKJD35vL5m5k8yVMl9RCB5xaJq47ihSynQt7jMPMYON4iU83fifqJuT_jXySefg9Q234taqhUFkbscDuFwKUZDbOk-FjgoEZ4sgRo3UrgD63eM3fC0W8uYXEtYxDfMV5zbOGRVGJboDRWBodFcSGRTwulBg8lSJ7lJd5AtQZECCLUuS87TRHnBOMJ01Ycq1YFU0jMSqKXdK1QLqr1R4hrjHgNDDDMc0dXT3_qLKGw"
+}
+2024-09-21T05:06:37.975Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726895197,
+    "exp": 1726931197,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T05:06:37.975Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T05:06:37.977Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY4OTUxOTcsImV4cCI6MTcyNjg5ODc5N30.eEIuJTjPRL6oW14n5bLxeGaZ4_VrcyLYJYOcDJG06XQ"
+}
+2024-09-21T05:06:43.453Z info: Received request to store data 
+2024-09-21T05:06:43.453Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726895181481,
+      "pseudo_id": "user_d91rrkbc8",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T05:06:43.453Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"id.worldcoin.org\",\"event_name\":\"page_view\",\"event_timestamp\":1726895181481,\"pseudo_id\":\"user_d91rrkbc8\",\"user_agent_hash\":\"-6e47b3f5\"}]"
+}
+2024-09-21T05:06:43.514Z info: Stored data with CID {
+  "cid": "QmYJe1Gk6ZA3HvvRXfaTsE9Q2URSKUXxadgJmaYUR3oKin"
+}
+2024-09-21T05:06:43.514Z info: Stored data with CID {
+  "cid": "QmYJe1Gk6ZA3HvvRXfaTsE9Q2URSKUXxadgJmaYUR3oKin"
+}
+2024-09-21T05:07:13.453Z info: Received request to store data 
+2024-09-21T05:07:13.453Z info: Received data {
+  "data": [
+    {
+      "domain": "www.youtube.com",
+      "event_name": "page_view",
+      "event_timestamp": 1726895214779,
+      "pseudo_id": "user_rp6sz5s98",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726895216296,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220707,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220739,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220756,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220773,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220791,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220807,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220824,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220840,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220857,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220874,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220890,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220907,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220924,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220940,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220957,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220974,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895220991,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221007,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221024,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221041,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221057,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221074,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221091,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221107,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221124,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221141,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895221174,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895222473,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895222509,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895222525,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895222542,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895222559,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895222575,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895222592,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726895222626,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "click",
+      "event_timestamp": 1726895223977,
+      "pseudo_id": "user_jixp67f0i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "news.nus.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726895225250,
+      "pseudo_id": "user_ydu5f04sa",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T05:07:13.454Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"www.youtube.com\",\"event_name\":\"page_view\",\"event_timestamp\":1726895214779,\"pseudo_id\":\"user_rp6sz5s98\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"page_view\",\"event_timestamp\":1726895216296,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220707,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220739,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220756,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220773,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220791,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220807,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220824,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220840,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220857,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220874,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220890,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220907,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220924,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220940,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220957,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220974,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895220991,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221007,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221024,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221041,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221057,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221074,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221091,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221107,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221124,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221141,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895221174,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895222473,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895222509,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895222525,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895222542,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895222559,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895222575,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895222592,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"scroll\",\"event_timestamp\":1726895222626,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"click\",\"event_timestamp\":1726895223977,\"pseudo_id\":\"user_jixp67f0i\",\"user_agent_hash\":\"-6e47b3f5\"},{\"domain\":\"news.nus.edu.sg\",\"event_name\":\"page_view\",\"event_timestamp\":1726895225250,\"pseudo_id\":\"user_ydu5f04sa\",\"user_agent_hash\":\"-6e47b3f5\"}]"
+}
+2024-09-21T05:07:13.518Z info: Stored data with CID {
+  "cid": "QmSe4SG9PYfhZuYzRggU6Serd7bGMQi56DUYJFbcnRBwrX"
+}
+2024-09-21T05:07:13.518Z info: Stored data with CID {
+  "cid": "QmSe4SG9PYfhZuYzRggU6Serd7bGMQi56DUYJFbcnRBwrX"
+}
+2024-09-21T05:08:40.733Z info: Received request to store data 
+2024-09-21T05:08:40.734Z info: Received data {
+  "data": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T05:08:40.734Z info: Storing data on IPFS {
+  "jsonString": "{\"testKey\":\"testValue\",\"number\":42,\"nested\":{\"key\":\"value\"}}"
+}
+2024-09-21T05:08:40.769Z info: Stored data with CID {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ"
+}
+2024-09-21T05:08:40.769Z info: Stored data with CID {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ"
+}
+2024-09-21T05:09:15.721Z info: Raw data from IPFS: {
+  "rawData": "123,34,116,101,115,116,75,101,121,34,58,34,116,101,115,116,86,97,108,117,101,34,44,34,110,117,109,98,101,114,34,58,52,50,44,34,110,101,115,116,101,100,34,58,123,34,107,101,121,34,58,34,118,97,108,117,101,34,125,125"
+}
+2024-09-21T05:09:15.722Z info: Converted data string: {
+  "dataString": "{\"testKey\":\"testValue\",\"number\":42,\"nested\":{\"key\":\"value\"}}"
+}
+2024-09-21T05:09:15.722Z info: Parsed data from IPFS: {
+  "parsedData": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T05:09:15.722Z info: Retrieved data from IPFS {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ",
+  "data": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T06:11:43.555Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:12:13.554Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:12:43.552Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:13:13.547Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:13:43.551Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:14:13.553Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:14:43.553Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:15:13.555Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
