@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Data Collector</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ollie Cookies</title>
   <script src="config.js"></script>
   <script src="popup.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      margin: 0;
+      padding: 15px;
+      background-color: #f0f4f8;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 10px;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0;
+      color: #2c3e50;
+    }
+    #auth-status {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin: 5px 0;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #auth-button {
+      width: 100%;
+    }
+    #data-control {
+      background-color: white;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    #debug-button, #test-button {
+      background-color: #2ecc71;
+    }
+    #debug-button:hover, #test-button:hover {
+      background-color: #27ae60;
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy-Preserving Data Collector</h1>
+  <div class="header">
+    <img src="icon128.png" alt="Ollie Cookies Icon" class="icon">
+    <h1>Ollie Cookies</h1>
+  </div>
   <div id="auth-status">Not authenticated</div>
   <button id="auth-button">Authenticate with World ID</button>
   <div id="data-control" style="display:none;">

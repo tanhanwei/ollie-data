@@ -1,8 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "Privacy-Preserving Data Collector",
+  "name": "Ollie Cookies",
   "version": "1.0",
   "description": "Collect browsing data while preserving user privacy",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
   "permissions": [
     "identity",
     "storage",
@@ -15,9 +28,6 @@
     "https://dev-rynbpb65bndtk1ka.us.auth0.com/*",
     "http://localhost:3000/*"
   ],
-  "action": {
-    "default_popup": "popup.html"
-  },
   "background": {
     "service_worker": "background.js"
   },
