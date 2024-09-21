@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# Ollie Cookies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Ollie Cookies is a revolutionary project that aims to transform the way we interact with online data. It's a privacy-preserving data marketplace that allows users to monetize their browsing data while maintaining anonymity and control over their personal information.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Chrome Extension**: Collect browsing data anonymously and securely.
+- **World ID Integration**: Ensure user authenticity while preserving privacy.
+- **Data Marketplace**: A platform for users to sell their anonymized data.
+- **Privacy-First Approach**: All data is encrypted and anonymized.
+- **Blockchain-Based**: Utilizing Oasis Network for secure and transparent transactions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Chrome Extension**: Collects browsing data and interfaces with World ID for authentication.
+2. **Frontend Application**: React-based web app for user interaction with the marketplace.
+3. **Backend Server**: Handles data storage, processing, and marketplace operations.
+4. **Smart Contracts**: Manage transactions and data ownership on the Oasis Network.
 
-### `npm test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (v14 or later)
+- npm or yarn
+- Google Chrome browser
+- MetaMask extension (for interacting with blockchain features)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Chrome Extension Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/ollie-cookies.git
+   cd ollie-cookies/chrome-extension
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-### `npm run eject`
+3. Build the extension:
+   ```
+   npm run build
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Load the extension in Chrome:
+   - Open Chrome and navigate to `chrome://extensions`
+   - Enable "Developer mode"
+   - Click "Load unpacked" and select the `build` directory
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Navigate to the frontend directory:
+   ```
+   cd ../frontend
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-## Learn More
+3. Start the development server:
+   ```
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Backend Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Navigate to the backend directory:
+   ```
+   cd ../backend
+   ```
 
-### Code Splitting
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Set up environment variables:
+   - Copy `.env.example` to `.env`
+   - Fill in the required values
 
-### Analyzing the Bundle Size
+4. Start the server:
+   ```
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+1. Install the Chrome extension and log in using World ID.
+2. Browse the web as normal. The extension will collect anonymized data.
+3. Visit the Ollie Cookies marketplace website to view your collected data and potential earnings.
+4. Data buyers can browse available datasets and make purchases.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Technology Stack
 
-### Advanced Configuration
+- Frontend: React, Material-UI
+- Backend: Node.js, Express
+- Database: MongoDB
+- Blockchain: Oasis Network
+- Authentication: World ID
+- Chrome Extension: JavaScript
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Future Developments
 
-### Deployment
+- Implementation of data purchase transactions
+- User reward distribution system
+- Integration with Oasis Sapphire ParaTime for enhanced privacy features
+- Mobile app for on-the-go data management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+We welcome contributions to Ollie Cookies! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) file for details on how to get involved.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Contact
+
+For any queries or support, please contact us at support@olliecookies.com.
+
+---
+
+Ollie Cookies - Empowering users in the data economy, one cookie at a time!

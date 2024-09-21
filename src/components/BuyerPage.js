@@ -1,6 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import DataMarketplaceABI from './DataMarketplaceABI.json';
+import { 
+  Typography, 
+  Button, 
+  Table, 
+  TableBody, 
+  TableCell, 
+  TableContainer, 
+  TableHead, 
+  TableRow, 
+  Paper,
+  Box,
+  Alert,
+  CircularProgress
+} from '@mui/material';
 
 const CONTRACT_ADDRESS = '0x520C9FC81f6B70C7AFc18bCF53d5f5bcABf36c62';
 
@@ -24,7 +38,6 @@ const BuyerPage = () => {
           const contractInstance = new ethers.Contract(CONTRACT_ADDRESS, DataMarketplaceABI, signer);
           setContract(contractInstance);
 
-          // Fetch real data from the server
           await fetchData();
         } catch (err) {
           console.error("Failed to initialize:", err);
@@ -45,7 +58,7 @@ const BuyerPage = () => {
       setLoading(true);
       const response = await fetch('http://localhost:3000/retrieve-data', {
         headers: {
-          'X-Nullifier-Hash': ethers.utils.id(account || 'dummybuyer') // Use a dummy hash if account is not set
+          'X-Nullifier-Hash': ethers.utils.id(account || 'dummybuyer')
         }
       });
       if (!response.ok) throw new Error('Failed to fetch data');
@@ -83,7 +96,6 @@ const BuyerPage = () => {
       console.log('Transaction confirmed in block:', receipt.blockNumber);
 
       console.log('Data purchased successfully');
-      // Refresh the data after purchase
       await fetchData();
     } catch (err) {
       console.error('Error purchasing data:', err);
@@ -94,48 +106,50 @@ const BuyerPage = () => {
     }
   };
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  if (loading) return <Box display="flex" justifyContent="center" mt={4}><CircularProgress /></Box>;
+  if (error) return <Alert severity="error" sx={{ mt: 4 }}>{error}</Alert>;
 
   return (
-    <div className="p-4 max-w-6xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Available Data for Purchase</h2>
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse border border-gray-300 text-sm">
-          <thead>
-            <tr className="bg-gray-100">
-              <th className="border border-gray-300 p-2">Event Type</th>
-              <th className="border border-gray-300 p-2">Timestamp</th>
-              <th className="border border-gray-300 p-2">Domain</th>
-              <th className="border border-gray-300 p-2">Owner</th>
-              <th className="border border-gray-300 p-2">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
+    <Box sx={{ maxWidth: 800, margin: 'auto', mt: 4 }}>
+      <Typography variant="h4" gutterBottom>Available Data for Purchase</Typography>
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Event Type</TableCell>
+              <TableCell>Timestamp</TableCell>
+              <TableCell>Domain</TableCell>
+              <TableCell>Owner</TableCell>
+              <TableCell>Actions</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
             {data.map((item, index) => (
-              <tr key={item.id || index} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
-                <td className="border border-gray-300 p-2">{item.event_name || 'N/A'}</td>
-                <td className="border border-gray-300 p-2">
+              <TableRow key={item.id || index}>
+                <TableCell>{item.event_name || 'N/A'}</TableCell>
+                <TableCell>
                   {item.event_timestamp ? new Date(item.event_timestamp).toLocaleString() : 'N/A'}
-                </td>
-                <td className="border border-gray-300 p-2">{item.domain || 'N/A'}</td>
-                <td className="border border-gray-300 p-2">
+                </TableCell>
+                <TableCell>{item.domain || 'N/A'}</TableCell>
+                <TableCell>
                   {item.ownerNullifierHash ? `${item.ownerNullifierHash.slice(0, 10)}...` : 'N/A'}
-                </td>
-                <td className="border border-gray-300 p-2">
-                  <button 
+                </TableCell>
+                <TableCell>
+                  <Button 
+                    variant="contained" 
+                    color="primary" 
+                    size="small"
                     onClick={() => processAndPurchase(item.id)}
-                    className="bg-blue-500 hover:bg-blue-700 text-white text-xs font-bold py-1 px-2 rounded"
                   >
                     Process and Purchase
-                  </button>
-                </td>
-              </tr>
+                  </Button>
+                </TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </Box>
   );
 };
 

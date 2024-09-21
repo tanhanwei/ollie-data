@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { IDKitWidget, VerificationLevel } from '@worldcoin/idkit';
 import { ethers } from 'ethers';
+import { 
+  Typography, 
+  Button, 
+  TextField, 
+  Table, 
+  TableBody, 
+  TableCell, 
+  TableContainer, 
+  TableHead, 
+  TableRow, 
+  Paper,
+  Box,
+  Alert,
+  CircularProgress
+} from '@mui/material';
 
 const UserPage = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -123,12 +138,12 @@ const UserPage = () => {
     }
   };
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  if (loading) return <CircularProgress />;
+  if (error) return <Alert severity="error">{error}</Alert>;
 
   return (
-    <div className="p-4 max-w-6xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Your Data</h2>
+    <Box sx={{ maxWidth: 800, margin: 'auto', mt: 4 }}>
+      <Typography variant="h4" gutterBottom>Your Data</Typography>
       
       {!isAuthenticated ? (
         <IDKitWidget
@@ -141,71 +156,71 @@ const UserPage = () => {
           }}
           verification_level={VerificationLevel.Orb}
         >
-          {({ open }) => <button onClick={open} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4">Authenticate with World ID</button>}
+          {({ open }) => <Button variant="contained" onClick={open} sx={{ mb: 2 }}>Authenticate with World ID</Button>}
         </IDKitWidget>
       ) : (
         <>
-     
-          
           {!isRegistered ? (
-            <div className="mb-4">
-              <input 
-                type="text" 
-                value={oasisWallet} 
+            <Box sx={{ mb: 2 }}>
+              <TextField
+                value={oasisWallet}
                 onChange={(e) => setOasisWallet(e.target.value)}
                 placeholder="Enter your Oasis wallet address"
-                className="border p-2 mr-2"
+                fullWidth
+                margin="normal"
               />
-              <button 
+              <Button 
+                variant="contained"
                 onClick={handleRegisterSeller}
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                sx={{ mt: 1 }}
               >
                 Register as Seller
-              </button>
-            </div>
+              </Button>
+            </Box>
           ) : (
-            <div className="mb-4">
-              <p className="text-green-600">You are registered as a seller.</p>
-              <p>Oasis Wallet: {oasisWallet}</p>
-            </div>
+            <Alert severity="success" sx={{ mb: 2 }}>
+              You are registered as a seller. Oasis Wallet: {oasisWallet}
+            </Alert>
           )}
 
-          <button 
+          <Button 
+            variant="contained"
+            color="secondary"
             onClick={clearAllData}
-            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mb-4"
+            sx={{ mb: 2 }}
           >
             Clear All Data
-          </button>
+          </Button>
 
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse border border-gray-300 text-sm">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 p-2">Event</th>
-                  <th className="border border-gray-300 p-2">Timestamp</th>
-                  <th className="border border-gray-300 p-2">Domain</th>
-                  <th className="border border-gray-300 p-2">Owner</th>
-                </tr>
-              </thead>
-              <tbody>
+          <TableContainer component={Paper}>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Event</TableCell>
+                  <TableCell>Timestamp</TableCell>
+                  <TableCell>Domain</TableCell>
+                  <TableCell>Owner</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
                 {data.map((item, index) => (
-                  <tr key={item.id || index} className={index % 2 === 0 ? 'bg-gray-50' : ''}>
-                    <td className="border border-gray-300 p-2">{item.event_name || 'N/A'}</td>
-                    <td className="border border-gray-300 p-2">
+                  <TableRow key={item.id || index}>
+                    <TableCell>{item.event_name || 'N/A'}</TableCell>
+                    <TableCell>
                       {item.event_timestamp ? new Date(item.event_timestamp).toLocaleString() : 'N/A'}
-                    </td>
-                    <td className="border border-gray-300 p-2">{item.domain || 'N/A'}</td>
-                    <td className="border border-gray-300 p-2">
+                    </TableCell>
+                    <TableCell>{item.domain || 'N/A'}</TableCell>
+                    <TableCell>
                       {item.ownerNullifierHash ? `${item.ownerNullifierHash.slice(0, 10)}...` : 'N/A'}
-                    </td>
-                  </tr>
+                    </TableCell>
+                  </TableRow>
                 ))}
-              </tbody>
-            </table>
-          </div>
+              </TableBody>
+            </Table>
+          </TableContainer>
         </>
       )}
-    </div>
+    </Box>
   );
 };
 
