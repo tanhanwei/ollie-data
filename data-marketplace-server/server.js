@@ -1,5 +1,4 @@
 require('dotenv').config();
-const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const { create } = require('ipfs-http-client');
@@ -58,42 +57,38 @@ const checkJwt = expressJwt({
 
 // Helper function to store data on IPFS
 async function storeDataOnIPFS(data) {
-    try {
-      const jsonString = JSON.stringify(data);
-      logger.info('Storing data on IPFS', { jsonString });
-      const result = await ipfs.add(jsonString);
-      logger.info('Stored data with CID', { cid: result.path });
-      return result.path;
-    } catch (error) {
-      logger.error('Error storing data on IPFS', { error: error.message });
-      throw error;
-    }
+  try {
+    const jsonString = JSON.stringify(data);
+    logger.info('Storing data on IPFS', { jsonString });
+    const result = await ipfs.add(jsonString);
+    logger.info('Stored data with CID', { cid: result.path });
+    return result.path;
+  } catch (error) {
+    logger.error('Error storing data on IPFS', { error: error.message });
+    throw error;
   }
+}
 
 // Helper function to retrieve data from IPFS
 async function retrieveDataFromIPFS(cid) {
-    let rawData = '';
-    try {
-      const stream = ipfs.cat(cid);
-      for await (const chunk of stream) {
-        rawData += chunk.toString();
-      }
-      logger.info('Raw data from IPFS:', { rawData });
-      if (!rawData) {
-        throw new Error('No data retrieved from IPFS');
-      }
-      // Convert the comma-separated string of ASCII codes to a proper string
-      const dataString = rawData.split(',').map(num => String.fromCharCode(parseInt(num))).join('');
-      logger.info('Converted data string:', { dataString });
-      const parsedData = JSON.parse(dataString);
-      logger.info('Parsed data from IPFS:', { parsedData });
-      return parsedData;
-    } catch (error) {
-      logger.error('Error retrieving or parsing data from IPFS', { error: error.message, cid, rawData });
-      throw error;
+  let rawData = '';
+  try {
+    const stream = ipfs.cat(cid);
+    for await (const chunk of stream) {
+      rawData += chunk.toString();
     }
+    logger.info('Raw data from IPFS:', { rawData });
+    if (!rawData) {
+      throw new Error('No data retrieved from IPFS');
+    }
+    const parsedData = JSON.parse(rawData);
+    logger.info('Parsed data from IPFS:', { parsedData });
+    return parsedData;
+  } catch (error) {
+    logger.error('Error retrieving or parsing data from IPFS', { error: error.message, cid, rawData });
+    throw error;
   }
-
+}
 
 // New endpoint for user authentication
 app.post('/auth', checkJwt, (req, res) => {
@@ -102,21 +97,20 @@ app.post('/auth', checkJwt, (req, res) => {
   logger.info('Received Auth0 token', { token: auth0Token });
   
   try {
-    // Decode the Auth0 token to log its contents (don't verify here, checkJwt already did that)
     const decodedToken = jwt.decode(auth0Token);
     logger.info('Decoded Auth0 token', { decodedToken });
 
-    // Extract World ID information
     const worldIdInfo = {
       nullifier_hash: decodedToken.sub.split('|')[2],
-      // Add any other World ID specific claims here
     };
     logger.info('Extracted World ID info', { worldIdInfo });
 
-    // Here you would typically verify the World ID specific claims in the Auth0 token
-    // For now, we'll just create our own JWT with the World ID info
     const token = jwt.sign({ worldIdInfo }, JWT_SECRET, { expiresIn: '1h' });
     logger.info('Generated new JWT token', { token });
+    
+    const decodedJWT = jwt.verify(token, JWT_SECRET);
+    logger.info('Decoded generated JWT', { decodedJWT });
+    
     res.json({ token });
   } catch (error) {
     logger.error('Error in /auth endpoint', { error: error.message });
@@ -130,66 +124,62 @@ app.post('/store-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }
   try {
     const data = req.body;
     logger.info('Received data', { data });
-    const cid = await storeDataOnIPFS(data);
+    logger.info('Full request headers', req.headers);
+    logger.info('Full token payload', req.auth); // Changed from req.user to req.auth
+
+    if (!req.auth || !req.auth.worldIdInfo) {
+      logger.error('Token payload:', JSON.stringify(req.auth, null, 2));
+      throw new Error('User information not found in token');
+    }
+
+    const ownerNullifierHash = req.auth.worldIdInfo.nullifier_hash;
+    logger.info('Owner nullifier hash', { ownerNullifierHash });
+
+    // Assuming data is an array of events
+    const dataWithOwner = data.map(event => ({
+      ...event,
+      ownerNullifierHash
+    }));
+
+    const cid = await storeDataOnIPFS(dataWithOwner);
     logger.info('Stored data with CID', { cid });
     res.json({ success: true, cid });
   } catch (error) {
-    logger.error('Error storing data', { error: error.message });
+    logger.error('Error storing data', { error: error.message, stack: error.stack });
     res.status(500).json({ success: false, error: error.message });
   }
 });
 
-// Protected route to retrieve data
-app.get('/retrieve-data/:cid', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }), async (req, res) => {
+// Route to retrieve data
+app.get('/retrieve-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }), async (req, res) => {
+  logger.info('Decoded token:', req.auth);
   try {
-    const { cid } = req.params;
-    const data = await retrieveDataFromIPFS(cid);
-    logger.info('Retrieved data from IPFS', { cid, data });
-    res.json({ success: true, data });
+    const allCIDs = await getAllCIDsFromDatabase(); // You need to implement this function
+    let allData = [];
+    for (const cid of allCIDs) {
+      const data = await retrieveDataFromIPFS(cid);
+      allData.push({ ...data, id: cid });
+    }
+    res.json({ success: true, data: allData });
   } catch (error) {
     logger.error('Error retrieving data', { error: error.message });
     res.status(500).json({ success: false, error: error.message });
   }
 });
 
-// Temporary endpoint for testing - remove in production
-app.get('/test-token', (req, res) => {
-    const token = jwt.sign({ worldIdInfo: { nullifier_hash: 'test_hash' } }, JWT_SECRET, { expiresIn: '1h' });
-    res.json({ token });
-  });
+// Helper function to get all CIDs (you need to implement this based on how you're storing CIDs)
+async function getAllCIDsFromDatabase() {
+  // This is a placeholder. You need to implement this based on your storage method.
+  return ['cid1', 'cid2', 'cid3'];
+}
 
-app.get('/ipfs-health', async (req, res) => {
-  try {
-    logger.info('Attempting IPFS health check');
-    const version = await ipfs.version();
-    logger.info('IPFS health check successful', { version });
-    res.json({ status: 'ok', version });
-  } catch (error) {
-    logger.error('IPFS health check failed', { error: error.message, stack: error.stack });
-    res.status(500).json({ status: 'error', message: error.message, stack: error.stack });
-  }
-});
-
-async function testIPFSConnection() {
-    try {
-      logger.info('Testing IPFS connection');
-      const version = await ipfs.version();
-      logger.info('IPFS connection successful', { version });
-      return true;
-    } catch (error) {
-      logger.error('IPFS connection test failed', { error: error.message, stack: error.stack });
-      return false;
-    }
-  }
-
-// Error handling middleware
+// Custom error handler
 app.use((err, req, res, next) => {
-  logger.error('Server error', { error: err.message, stack: err.stack });
   if (err.name === 'UnauthorizedError') {
-    res.status(401).send('Invalid token');
-  } else {
-    res.status(500).send('Something broke!');
+    logger.error('JWT Error:', err);
+    return res.status(401).json({ error: 'Invalid token' });
   }
+  next(err);
 });
 
 // Start the server and test IPFS connection
@@ -202,3 +192,15 @@ app.listen(port, async () => {
     logger.warn('Failed to establish IPFS connection');
   }
 });
+
+async function testIPFSConnection() {
+  try {
+    logger.info('Testing IPFS connection');
+    const version = await ipfs.version();
+    logger.info('IPFS connection successful', { version });
+    return true;
+  } catch (error) {
+    logger.error('IPFS connection test failed', { error: error.message, stack: error.stack });
+    return false;
+  }
+}

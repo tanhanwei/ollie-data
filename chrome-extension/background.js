@@ -51,7 +51,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         const decodedJwt = decodeJwt(jwtToken);
         console.log('Decoded JWT:', JSON.stringify(decodedJwt, null, 2));
         // Store the tokens securely
-        chrome.storage.local.set({auth_tokens: data, authenticated: true}, function() {
+        chrome.storage.local.set({
+          token: data.token,
+          authenticated: true
+        }, function() {
+          console.log('Token saved and authenticated set to true in chrome.storage.local');
           sendResponse({success: true});
         });
       })
@@ -83,36 +87,61 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
   
 function syncData() {
-    chrome.storage.local.get({collectedData: [], authenticated: false}, function(result) {
-      if (result.authenticated && result.collectedData.length > 0 && jwtToken) {
-        console.log('Syncing data:', JSON.stringify(result.collectedData, null, 2));
-        
-        fetch('http://localhost:3000/store-data', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${jwtToken}`
-          },
-          body: JSON.stringify(result.collectedData),
-        })
-        .then(response => response.json())
-        .then(data => {
-          if (data.success) {
-            console.log('Data stored on IPFS with CID:', data.cid);
-            // Clear the local storage after successful sync
-            chrome.storage.local.set({collectedData: []});
-          } else {
-            console.error('Failed to store data:', data.error);
-          }
-        })
-        .catch(error => {
-          console.error('Error syncing data:', error);
-        });
-      } else {
-        console.log('Not syncing data. Authenticated:', result.authenticated, 'Data points:', result.collectedData.length, 'JWT token exists:', !!jwtToken);
+  chrome.storage.local.get({collectedData: [], authenticated: false, token: null}, function(result) {
+    console.log('Sync check - Auth:', result.authenticated, 'Data points:', result.collectedData.length, 'Token exists:', !!result.token);
+    if (result.authenticated && result.collectedData.length > 0 && result.token) {
+      console.log('Token being sent:', result.token);
+      // Decode and log the token content
+      try {
+        const tokenParts = result.token.split('.');
+        const tokenPayload = JSON.parse(atob(tokenParts[1]));
+        console.log('Decoded token payload:', tokenPayload);
+      } catch (error) {
+        console.error('Error decoding token:', error);
       }
-    });
-  }
+      
+      const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${result.token}`
+      };
+      console.log('Headers being sent:', headers);
+
+      fetch('http://localhost:3000/store-data', {
+        method: 'POST',
+        headers: headers,
+        body: JSON.stringify(result.collectedData),
+      })
+      .then(response => {
+        if (!response.ok) {
+          return response.text().then(text => {
+            throw new Error(`HTTP error! status: ${response.status}, body: ${text}`);
+          });
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data.success) {
+          console.log('Data stored on IPFS with CID:', data.cid);
+          // Clear the local storage after successful sync
+          chrome.storage.local.set({collectedData: []});
+        } else {
+          console.error('Failed to store data:', data.error);
+        }
+      })
+      .catch(error => {
+        console.error('Error syncing data:', error);
+        // If there's an authentication error, clear the stored token and set authenticated to false
+        if (error.message.includes('401') || error.message.includes('User information not found in token')) {
+          chrome.storage.local.set({token: null, authenticated: false}, function() {
+            console.log('Cleared authentication due to error');
+          });
+        }
+      });
+    } else {
+      console.log('Not syncing data. Authenticated:', result.authenticated, 'Data points:', result.collectedData.length, 'Token exists:', !!result.token);
+    }
+  });
+}
 
 // Sync data every 30 seconds (30000 milliseconds)
 setInterval(syncData, 30000);

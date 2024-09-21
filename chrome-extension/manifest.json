@@ -1,33 +1,39 @@
 {
-    "manifest_version": 3,
-    "name": "Privacy-Preserving Data Collector",
-    "version": "1.0",
-    "description": "Collect browsing data while preserving user privacy",
-    "permissions": [
+  "manifest_version": 3,
+  "name": "Privacy-Preserving Data Collector",
+  "version": "1.0",
+  "description": "Collect browsing data while preserving user privacy",
+  "permissions": [
     "identity",
     "storage",
     "activeTab",
-    "scripting"
-    ],
-    "host_permissions": [
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
     "https://id.worldcoin.org/*",
     "https://dev-rynbpb65bndtk1ka.us.auth0.com/*",
     "http://localhost:3000/*"
-    ],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ],
-    "web_accessible_resources": [{
-        "resources": ["test.html"],
-        "matches": ["<all_urls>"]
-      }]
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["test.html"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
   }
+}

@@ -1012,3 +1012,1587 @@
   "error": "jwt expired",
   "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
 }
+2024-09-21T06:15:43.551Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:16:13.551Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:16:43.553Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:17:13.555Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:17:43.556Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:18:13.553Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:18:43.557Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:19:13.557Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:19:43.554Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:20:13.555Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:20:43.561Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:21:13.559Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:21:43.557Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:22:13.554Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:22:43.560Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:23:13.558Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:23:43.559Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:24:13.560Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:24:43.563Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:25:13.561Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:25:43.558Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:26:13.562Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:26:43.559Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:27:13.564Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:27:43.564Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:28:13.562Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:28:43.562Z error: Server error {
+  "error": "jwt expired",
+  "stack": "UnauthorizedError: jwt expired\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:28:45.970Z info: Server running at http://localhost:3000 
+2024-09-21T06:28:45.971Z info: Testing IPFS connection 
+2024-09-21T06:28:45.989Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T06:28:45.990Z info: IPFS connection established 
+2024-09-21T06:30:36.297Z info: Received authentication request 
+2024-09-21T06:30:36.297Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMDIzNSwiZXhwIjoxNzI2OTM2MjM1LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.eHmmEvYWPrYwU5mpI44gGMhnIerkcYlVIFKDESeQ4hKCoUOXesxTystDI2Q6o1SiRNWvrZtdMIsvCAgsk0LU0IqDVCBJWSDcP_59B-0tPA4-Yc7YMBlrq2UYYqcxuUK2OyJj_3t5kEth3XFCB91Tl3xuCKu5_6ce4mCkJzwVhxX4wNxM1b4ZJkDEQBkHsCbFK7ocJ2o_f-xJOTK9APtcPI_jzSCjW_8rwKGZj9rxbNtJJ-jhMCRuJiO3Y-OH0bxKZ8weoxF-EWqnOqNweUzw_0BxKMCLDMQk6LY2WKALDsKTTu__IPR3BeAtYZ7MdqFxjh0dLvRpg73vdgBR3vUWUw"
+}
+2024-09-21T06:30:36.298Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726900235,
+    "exp": 1726936235,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T06:30:36.298Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T06:30:36.300Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDAyMzYsImV4cCI6MTcyNjkwMzgzNn0.eOdKOKFKtXRTriF9hD1EZMVnJou-WdV6--M7JuEsKu4"
+}
+2024-09-21T06:30:43.803Z info: Received request to store data 
+2024-09-21T06:30:43.804Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:30:50.447Z error: Server error {
+  "error": "jwt malformed",
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:30:50.449Z error: Server error {
+  "error": "jwt malformed",
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:31:13.799Z info: Received request to store data 
+2024-09-21T06:31:13.800Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:31:35.041Z error: Server error {
+  "error": "jwt malformed",
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:31:35.042Z error: Server error {
+  "error": "jwt malformed",
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:31:43.803Z info: Received request to store data 
+2024-09-21T06:31:43.803Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:32:18.857Z info: Server running at http://localhost:3000 
+2024-09-21T06:32:18.859Z info: Testing IPFS connection 
+2024-09-21T06:32:18.877Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T06:32:18.877Z info: IPFS connection established 
+2024-09-21T06:32:47.371Z info: Received authentication request 
+2024-09-21T06:32:47.372Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMDM2NiwiZXhwIjoxNzI2OTM2MzY2LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.nz2Ifxj0gmHEvambsUr-Vv11FUBCQayjab6jJW-1qK4iVJA3nlyV1O-vreIleq8kyXNvUOFggByovMo7E_Iami2MNmozMcO70oRLmOuH0AZKNrxzbpT7LMnmddR3JA4JYdHHIDAWH0de4k1k1TeevbvpmG4Yl03a14HKmPXd2LXLlGlaM57PZcChIaXMEGz0pznnv-U6s0jTg-Q8V80NpDjVOojMUOtXRuDEjOB-INocyo3fSYIOT8l2wPEwVJw3CgovjB3hD9TyEGlEfKUo7oZbLNt9qC-660BcuOhnV08jj56SAJQPXSFtL2qPC37_jMmTpnwajjmJO8VFj99KDw"
+}
+2024-09-21T06:32:47.372Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726900366,
+    "exp": 1726936366,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T06:32:47.372Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T06:32:47.374Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDAzNjcsImV4cCI6MTcyNjkwMzk2N30.6aHg46j5Fx5SBqNQ9ntS3Iol9cTHyxP4OcM51Hk6hrg"
+}
+2024-09-21T06:33:13.440Z info: Received request to store data 
+2024-09-21T06:33:13.440Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:33:43.436Z info: Received request to store data 
+2024-09-21T06:33:43.437Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:34:13.434Z info: Received request to store data 
+2024-09-21T06:34:13.435Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:34:43.439Z info: Received request to store data 
+2024-09-21T06:34:43.439Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:35:13.437Z info: Received request to store data 
+2024-09-21T06:35:13.438Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:35:43.437Z info: Received request to store data 
+2024-09-21T06:35:43.438Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:36:13.437Z info: Received request to store data 
+2024-09-21T06:36:13.437Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:36:43.441Z info: Received request to store data 
+2024-09-21T06:36:43.442Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:37:13.436Z info: Received request to store data 
+2024-09-21T06:37:13.437Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:37:43.437Z info: Received request to store data 
+2024-09-21T06:37:43.438Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:38:13.438Z info: Received request to store data 
+2024-09-21T06:38:13.439Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:38:43.440Z info: Received request to store data 
+2024-09-21T06:38:43.441Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:39:13.442Z info: Received request to store data 
+2024-09-21T06:39:13.443Z error: Error storing data {
+  "error": "Cannot read properties of undefined (reading 'worldIdInfo')"
+}
+2024-09-21T06:39:34.025Z info: Server running at http://localhost:3000 
+2024-09-21T06:39:34.027Z info: Testing IPFS connection 
+2024-09-21T06:39:34.044Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T06:39:34.044Z info: IPFS connection established 
+2024-09-21T06:40:05.847Z info: Received authentication request 
+2024-09-21T06:40:05.847Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMDgwNSwiZXhwIjoxNzI2OTM2ODA1LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.ZaSjsnOnfRolOan1QkpewMzK2cRerpWJbImpuGJY6TjsCvxnkvQhHqVG6sUp6xiUQJkqRmG0-VksTYUnpSuYNmR-4Ufpdj5uKaEdsdxcqeEhHEAZI-QzetZPEBaI-NU5OU-E4Aab72NdTg6YtsVeXFCihcfwOqlFvv-AVeojlleZBqBaxXV55uJEgX4DjRBvsfZiv-krj54xq2ow94feYNSbJyV8nHazAFPJXicDRs0_8GOgyBv39bPjThmIxuSzLF0dPp1sZs6y3AizB_BPNrjh8xb3LoUr2Tc4tbot-JiRIxE-_RLeb8q4KMUVdLLI3ToDSUTeBJD3xIC05ke63g"
+}
+2024-09-21T06:40:05.848Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726900805,
+    "exp": 1726936805,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T06:40:05.848Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T06:40:05.850Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDA4MDUsImV4cCI6MTcyNjkwNDQwNX0.LCGCBcCFc5NX6lqRsKQJ_EVCaFgnotI9LgF0p3tLKYE"
+}
+2024-09-21T06:44:12.449Z error: Server error {
+  "error": "jwt malformed",
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:44:12.450Z error: Server error {
+  "error": "jwt malformed",
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T06:47:55.726Z info: Server running at http://localhost:3000 
+2024-09-21T06:47:55.729Z info: Testing IPFS connection 
+2024-09-21T06:47:55.748Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T06:47:55.748Z info: IPFS connection established 
+2024-09-21T06:48:23.856Z info: Received authentication request 
+2024-09-21T06:48:23.856Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMTMwMiwiZXhwIjoxNzI2OTM3MzAyLCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.OpPo_4CcaCEVGjVUiscRH_qANFXF5OWPBVhMXavhN9GAlGr86Fas-4TQFkS1vpowah9BYP0ecvt2NUyweTEqD8gmp-Vgu_u-Rg1iUslyt6SEwc9YpyTlyVal2lDgVeyvsmy-kjMxXPKpqo5ifEM8b4VPuClkSyYmwa3bGO3N1h7Tc2H9Xho9Er2gNONjvYhVBb6o3mcLYIL3_HlyK2arILzJ64IAKvB8KWobV7rxcuWEBKG3NTYgL6yHEuDj8ojTmNFkDmZ_KJaY1extMG7hidFD6T-p4hxWC66n-HNZo3X9AqQeJbfgoeb5ehQ_akDaclCpyv_dDyDzldhm-u7xJw"
+}
+2024-09-21T06:48:23.857Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726901302,
+    "exp": 1726937302,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T06:48:23.857Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T06:48:23.859Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDEzMDMsImV4cCI6MTcyNjkwNDkwM30.5XnqyjoD4JOUiEoUuhJaYrz-1spraXCZwgy2Ax3qPkY"
+}
+2024-09-21T06:48:31.729Z info: Received request to store data 
+2024-09-21T06:48:31.729Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901286798,
+      "pseudo_id": "user_yw72s2pgf",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726901310271,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:48:31.729Z info: User info from token {}
+2024-09-21T06:48:31.730Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:49:01.731Z info: Received request to store data 
+2024-09-21T06:49:01.731Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901286798,
+      "pseudo_id": "user_yw72s2pgf",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726901310271,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314501,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314538,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314554,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314571,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314588,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314604,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314621,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314638,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314655,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314672,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314687,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314705,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314723,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "click",
+      "event_timestamp": 1726901317521,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:49:01.731Z info: User info from token {}
+2024-09-21T06:49:01.732Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:49:31.725Z info: Received request to store data 
+2024-09-21T06:49:31.725Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901286798,
+      "pseudo_id": "user_yw72s2pgf",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726901310271,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314501,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314538,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314554,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314571,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314588,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314604,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314621,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314638,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314655,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314672,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314687,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314705,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314723,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "click",
+      "event_timestamp": 1726901317521,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:49:31.726Z info: User info from token {}
+2024-09-21T06:49:31.726Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:50:01.725Z info: Received request to store data 
+2024-09-21T06:50:01.725Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901286798,
+      "pseudo_id": "user_yw72s2pgf",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726901310271,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314501,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314538,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314554,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314571,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314588,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314604,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314621,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314638,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314655,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314672,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314687,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314705,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314723,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "click",
+      "event_timestamp": 1726901317521,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:50:01.725Z info: User info from token {}
+2024-09-21T06:50:01.726Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:50:31.730Z info: Received request to store data 
+2024-09-21T06:50:31.730Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901286798,
+      "pseudo_id": "user_yw72s2pgf",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726901310271,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314501,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314538,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314554,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314571,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314588,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314604,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314621,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314638,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314655,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314672,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314687,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314705,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314723,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "click",
+      "event_timestamp": 1726901317521,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:50:31.731Z info: User info from token {}
+2024-09-21T06:50:31.731Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:51:01.731Z info: Received request to store data 
+2024-09-21T06:51:01.731Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901286798,
+      "pseudo_id": "user_yw72s2pgf",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726901310271,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314501,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314538,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314554,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314571,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314588,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314604,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314621,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314638,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314655,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314672,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314687,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314705,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "scroll",
+      "event_timestamp": 1726901314723,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "click",
+      "event_timestamp": 1726901317521,
+      "pseudo_id": "user_qpnhu2mjc",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:51:01.731Z info: User info from token {}
+2024-09-21T06:51:01.731Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:53:17.321Z info: Server running at http://localhost:3000 
+2024-09-21T06:53:17.324Z info: Testing IPFS connection 
+2024-09-21T06:53:17.346Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T06:53:17.346Z info: IPFS connection established 
+2024-09-21T06:56:39.037Z info: Server running at http://localhost:3000 
+2024-09-21T06:56:39.039Z info: Testing IPFS connection 
+2024-09-21T06:56:39.057Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T06:56:39.057Z info: IPFS connection established 
+2024-09-21T06:57:07.492Z info: Received authentication request 
+2024-09-21T06:57:07.492Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMTgyNiwiZXhwIjoxNzI2OTM3ODI2LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.IEN0SEcWWltaFX_AHRW3QzQ8pA8gnRqCDEtB30x3pHwi6PC6bembUifFf6zDbtzsBbbA_MTBmVtq8CrOF5ArH-F1TW9Nau87Q94j7Mf2YR2wyt7xHCcq5NT-pKOdnIHKltPHgy-Kv2VejMstPgpGcFsSwhlRPTi0BZlfHa1boUKY8oxtlLwip9Kj9RBbclx4TMmY82Uy5_8CVLfl1OXnoS_QFBqfFyqpcCTtpuCGmckOVK1oQunVpQbZfM2YNXqIBitNvgFpmxf_8WzRC_8-8dK8X1TLgh-RDQFWPpQGqpyGl7QIiTZbVRBQKcEVfA2pnY7xVMf_kZtJ85imZbOX7g"
+}
+2024-09-21T06:57:07.492Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726901826,
+    "exp": 1726937826,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T06:57:07.493Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T06:57:07.494Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDE4MjcsImV4cCI6MTcyNjkwNTQyN30.9oDjo1rE-HTlqpRoiXVKFTXCtAM8c3T-wldMRbxIug4"
+}
+2024-09-21T06:57:16.577Z info: Received request to store data 
+2024-09-21T06:57:16.578Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:57:16.578Z info: User info from token {}
+2024-09-21T06:57:16.578Z error: Token payload: 
+2024-09-21T06:57:16.578Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:57:46.572Z info: Received request to store data 
+2024-09-21T06:57:46.573Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:57:46.573Z info: User info from token {}
+2024-09-21T06:57:46.573Z error: Token payload: 
+2024-09-21T06:57:46.573Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:58:16.577Z info: Received request to store data 
+2024-09-21T06:58:16.578Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:58:16.578Z info: User info from token {}
+2024-09-21T06:58:16.578Z error: Token payload: 
+2024-09-21T06:58:16.578Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:58:46.574Z info: Received request to store data 
+2024-09-21T06:58:46.574Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:58:46.574Z info: User info from token {}
+2024-09-21T06:58:46.574Z error: Token payload: 
+2024-09-21T06:58:46.574Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:59:16.573Z info: Received request to store data 
+2024-09-21T06:59:16.573Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:59:16.574Z info: User info from token {}
+2024-09-21T06:59:16.574Z error: Token payload: 
+2024-09-21T06:59:16.574Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T06:59:46.576Z info: Received request to store data 
+2024-09-21T06:59:46.576Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T06:59:46.576Z info: User info from token {}
+2024-09-21T06:59:46.576Z error: Token payload: 
+2024-09-21T06:59:46.576Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:00:16.576Z info: Received request to store data 
+2024-09-21T07:00:16.576Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:00:16.577Z info: User info from token {}
+2024-09-21T07:00:16.577Z error: Token payload: 
+2024-09-21T07:00:16.577Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:00:46.573Z info: Received request to store data 
+2024-09-21T07:00:46.573Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:00:46.573Z info: User info from token {}
+2024-09-21T07:00:46.573Z error: Token payload: 
+2024-09-21T07:00:46.573Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:01:16.580Z info: Received request to store data 
+2024-09-21T07:01:16.580Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:01:16.580Z info: User info from token {}
+2024-09-21T07:01:16.580Z error: Token payload: 
+2024-09-21T07:01:16.581Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:01:46.579Z info: Received request to store data 
+2024-09-21T07:01:46.579Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726901813732,
+      "pseudo_id": "user_66lc3x2x0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:01:46.580Z info: User info from token {}
+2024-09-21T07:01:46.580Z error: Token payload: 
+2024-09-21T07:01:46.580Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:142:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:02:03.436Z info: Server running at http://localhost:3000 
+2024-09-21T07:02:03.437Z info: Testing IPFS connection 
+2024-09-21T07:02:03.454Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T07:02:03.454Z info: IPFS connection established 
+2024-09-21T07:02:32.169Z info: Received authentication request 
+2024-09-21T07:02:32.169Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMjE1MSwiZXhwIjoxNzI2OTM4MTUxLCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.v-BIJfX3-ul7FCnn7eq05IaVuMh7-xtywSeX69X_eUOYPYjpWqx5o7QgTWYd-3DBTCax_uH2r1peLc5USdTJAJNZBw-kxd6clpRZ17E4c-w0lDxp4VzzDG3FyUvOTfsW8FkOCaWMusrtIQCloPhAmJvrtJjBaxOGVo0nmtJ420-Z-lPhWcsfWHCeHmlvR8C4b--BPdxON1Ql0prucXGfgw5mgngzW3bTlMPXwpwlBLJUTFVASQGkMUpRGKbUfmguMDvo_cd4K-1SU3SRTbn3e8s8qOAPI6YmQ5yFdp4-z_-49UZKs2IfPaNEUAlGmSp9V2yCZaEKyytfFZhHtu3inQ"
+}
+2024-09-21T07:02:32.170Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726902151,
+    "exp": 1726938151,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T07:02:32.170Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T07:02:32.172Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDIxNTIsImV4cCI6MTcyNjkwNTc1Mn0.r5UkHWzo81IfsUhQzXK4WVhSGqm5rMbtJ58V-SvS-HM"
+}
+2024-09-21T07:02:40.142Z info: Received request to store data 
+2024-09-21T07:02:40.143Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726902138354,
+      "pseudo_id": "user_2ucntutuh",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726902156967,
+      "pseudo_id": "user_3lt0h4mls",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:02:40.143Z info: User info from token {}
+2024-09-21T07:02:40.143Z error: Token payload: 
+2024-09-21T07:02:40.143Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:06:04.565Z info: Server running at http://localhost:3000 
+2024-09-21T07:06:04.566Z info: Testing IPFS connection 
+2024-09-21T07:06:04.584Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T07:06:04.584Z info: IPFS connection established 
+2024-09-21T07:06:33.397Z info: Received authentication request 
+2024-09-21T07:06:33.397Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMjM5MiwiZXhwIjoxNzI2OTM4MzkyLCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.p1rvxoZnWS_-CIC3XDLiru0ko7KepZrx1UyKuXLIE0oqD5PF-aNvNStEQDk0iMIOZVUXiwGXxTuaOPXJp6muWqlmYWhhr4MwlTAmdRkH9fbKVMdQwjtcsCL28LruG0oLcNFXcP3PqyQ8bcD0lQCQ3YcylRIXtqy7yJR43iGsQcj1m-90kW0SGJAt_qRaHm3grASsUIG2FtWYuBVDJAgIQTAZGxIBKshg1eb88mPONXS009nLUKypgYzkX2v3r3w5F6vPNSW0tgHqLHOWfRqNtGNA1eEDxTtRU2CunvxM0jy9d1tbxVi_AIIAaS9NfLNkpRsryWP1ah0_mlEMY2_8xw"
+}
+2024-09-21T07:06:33.398Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726902392,
+    "exp": 1726938392,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T07:06:33.398Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T07:06:33.399Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDIzOTMsImV4cCI6MTcyNjkwNTk5M30.6Zhr8tUPIcZtaJEtUUPNOH4Ndo_YQARAhmnK7EQfMs4"
+}
+2024-09-21T07:06:33.400Z info: Decoded generated JWT {
+  "decodedJWT": {
+    "worldIdInfo": {
+      "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    "iat": 1726902393,
+    "exp": 1726905993
+  }
+}
+2024-09-21T07:06:43.873Z info: Received request to store data 
+2024-09-21T07:06:43.873Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726902379072,
+      "pseudo_id": "user_mt9jnrczn",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726902397614,
+      "pseudo_id": "user_yibm77hb6",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:06:43.873Z info: Full token payload 
+2024-09-21T07:06:43.873Z error: Token payload: 
+2024-09-21T07:06:43.873Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:15:33.744Z info: Server running at http://localhost:3000 
+2024-09-21T07:15:33.747Z info: Testing IPFS connection 
+2024-09-21T07:15:33.767Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T07:15:33.767Z info: IPFS connection established 
+2024-09-21T07:16:42.635Z info: Received authentication request 
+2024-09-21T07:16:42.636Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMzAwMSwiZXhwIjoxNzI2OTM5MDAxLCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.QaIsQd3IU_hFuK0n1Z7-2MEGUOz7QSbOvjRMyWvnAc92cbx_zGhY4jpTLHAn24r5pFDKRazE93NiB2GhN1WRV2RuO0I0DPEugSXflTwh5F7PLQaLbEaKGIKXZp0eXSR2nNxgkIecUW_TMt_w4BCenGD3vqE51xKx_AySme3Fmeer11AIxeytqbElUsBWY2DpYy6MRTYCbgw3TwwKA8nSM49j8WSVPH_MCm8zx7e4f-5p5rT433X0xwTS2ImWob19kNqxoqTJvVJFjAsP_lPYrwqRH_yAJ0r2trp1cwvwAs0ML1rp2DvSJpBcwOE-ZYE9gbSqYPY9mwXoa9P3q4WGcA"
+}
+2024-09-21T07:16:42.636Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726903001,
+    "exp": 1726939001,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T07:16:42.636Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T07:16:42.639Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDMwMDIsImV4cCI6MTcyNjkwNjYwMn0.bEo1jAijhIutat4mimTVnBca91BjlxbX8ozIVXUP2QQ"
+}
+2024-09-21T07:16:42.639Z info: Decoded generated JWT {
+  "decodedJWT": {
+    "worldIdInfo": {
+      "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    "iat": 1726903002,
+    "exp": 1726906602
+  }
+}
+2024-09-21T07:16:54.879Z info: Received request to store data 
+2024-09-21T07:16:54.880Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726902989109,
+      "pseudo_id": "user_wt8a67m20",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726903006364,
+      "pseudo_id": "user_4zbfyvyr3",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "click",
+      "event_timestamp": 1726903009418,
+      "pseudo_id": "user_4zbfyvyr3",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:16:54.880Z info: Full token payload 
+2024-09-21T07:16:54.880Z error: Token payload: 
+2024-09-21T07:16:54.880Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:141:15\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:24:48.272Z info: Server running at http://localhost:3000 
+2024-09-21T07:24:48.276Z info: Testing IPFS connection 
+2024-09-21T07:24:48.298Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T07:24:48.298Z info: IPFS connection established 
+2024-09-21T07:25:17.434Z info: Received authentication request 
+2024-09-21T07:25:17.435Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwMzUxNiwiZXhwIjoxNzI2OTM5NTE2LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.KYzgymmrEQmbnuQqfrmYobH8c08ChaLYgrcHavKEP2-HrhBb-lazQcrhkLssVXl4PgJItFMoYoqzc4T3OFwKolQXD-ZOxFHQPfqWABgocV_dRMsYep0xR9k9EhvWszk7sUS4nNRtfYQGr4ZEaylRuB9SJxrvFjsOSZfaqaPfImMrU3lD9LbTD6G9b5gN1rgZrzsGQvH-hfTvaxut-5HqJLyYphoV0G54W__BjR7IYQ7d2meIezq4WKajkQPgl5jvV8rRm-M0KVpHFSAva4tAARvR4xsaDtc8at1PtYb4K1XrNqwfrjD6NdA89pSrmQnP3DgFpAdww6HYv5d_LPRkbw"
+}
+2024-09-21T07:25:17.435Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726903516,
+    "exp": 1726939516,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T07:25:17.435Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T07:25:17.437Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDM1MTcsImV4cCI6MTcyNjkwNzExN30.GMYvH9Ww7t6GKSU_aF2lAMv3rfWP_m4ggHxIgjOwxUE"
+}
+2024-09-21T07:25:17.438Z info: Decoded generated JWT {
+  "decodedJWT": {
+    "worldIdInfo": {
+      "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    "iat": 1726903517,
+    "exp": 1726907117
+  }
+}
+2024-09-21T07:25:26.536Z info: Received request to store data 
+2024-09-21T07:25:26.537Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726903502822,
+      "pseudo_id": "user_l4bemcrfh",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726903519932,
+      "pseudo_id": "user_hoap1ejss",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:25:26.537Z info: Full request headers {
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "content-length": "291",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDM1MTcsImV4cCI6MTcyNjkwNzExN30.GMYvH9Ww7t6GKSU_aF2lAMv3rfWP_m4ggHxIgjOwxUE",
+  "accept": "*/*",
+  "origin": "chrome-extension://mmmaljibofhlnclinlnlphhbobkjfanf",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2024-09-21T07:25:26.538Z info: Full token payload 
+2024-09-21T07:25:26.538Z error: Token payload: 
+2024-09-21T07:25:26.538Z error: Error storing data {
+  "error": "User information not found in token",
+  "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:132:13\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
+}
+2024-09-21T07:40:19.091Z info: Server running at http://localhost:3000 
+2024-09-21T07:40:19.093Z info: Testing IPFS connection 
+2024-09-21T07:40:19.114Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T07:40:19.114Z info: IPFS connection established 
+2024-09-21T07:40:52.777Z info: Received authentication request 
+2024-09-21T07:40:52.778Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwNDQ1MiwiZXhwIjoxNzI2OTQwNDUyLCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.RFNWxhth1xfx8pMlU38_gA6o9iIrEK8Oes9YU69CSpNzcM8SSZMuO1PrzmB2QHpFaApWFFD29T676TX0PLKrw6poDYQAvTtI9nKjTivijrY489llwxZ42qrUp2OW5V-aa_iDOedajpRVAEag77M791Mk7wzZ1MPNu0D11TWwZpSZsulg1MvaBLYjJqWu7JZnQnVaTNBH6ys8-P29m8Vj1rbBBfxvIRvfDrApklxd1ryjSfV6mrly53LMVcL6ehKvFFusZTNMlX7c-DrAoHAqtvAPb9LftiLNTaHZ1NscYvGWubwrS-vGbjEup7N77QT3V9o6i4ryk2bJcfBt4GC_8A"
+}
+2024-09-21T07:40:52.778Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726904452,
+    "exp": 1726940452,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T07:40:52.778Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T07:40:52.780Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDQ0NTIsImV4cCI6MTcyNjkwODA1Mn0.A8GTBqwT2yXLpQpAsaBkcnf7E5AINAC5UxSV7IHTX7U"
+}
+2024-09-21T07:40:52.781Z info: Decoded generated JWT {
+  "decodedJWT": {
+    "worldIdInfo": {
+      "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    "iat": 1726904452,
+    "exp": 1726908052
+  }
+}
+2024-09-21T07:41:00.413Z info: Received request to store data 
+2024-09-21T07:41:00.414Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726904436117,
+      "pseudo_id": "user_bpasbpr2i",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726904459208,
+      "pseudo_id": "user_2zitjqe26",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T07:41:00.414Z info: Full request headers {
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "content-length": "287",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDQ0NTIsImV4cCI6MTcyNjkwODA1Mn0.A8GTBqwT2yXLpQpAsaBkcnf7E5AINAC5UxSV7IHTX7U",
+  "accept": "*/*",
+  "origin": "chrome-extension://mmmaljibofhlnclinlnlphhbobkjfanf",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2024-09-21T07:41:00.414Z info: Full token payload {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726904452,
+  "exp": 1726908052
+}
+2024-09-21T07:41:00.414Z info: Owner nullifier hash {
+  "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+}
+2024-09-21T07:41:00.414Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"id.worldcoin.org\",\"event_name\":\"page_view\",\"event_timestamp\":1726904436117,\"pseudo_id\":\"user_bpasbpr2i\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"},{\"domain\":\"nus.edu.sg\",\"event_name\":\"page_view\",\"event_timestamp\":1726904459208,\"pseudo_id\":\"user_2zitjqe26\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"}]"
+}
+2024-09-21T07:41:00.477Z info: Stored data with CID {
+  "cid": "QmPafUoZLk26EdaiadJueKR7gco2uST5qq4LjnUEpTrAST"
+}
+2024-09-21T07:41:00.477Z info: Stored data with CID {
+  "cid": "QmPafUoZLk26EdaiadJueKR7gco2uST5qq4LjnUEpTrAST"
+}
