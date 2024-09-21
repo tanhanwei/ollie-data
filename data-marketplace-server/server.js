@@ -3,9 +3,6 @@ const express = require('express');
 const cors = require('cors');
 const { create } = require('ipfs-http-client');
 const winston = require('winston');
-const jwt = require('jsonwebtoken');
-const { expressjwt: expressJwt } = require('express-jwt');
-const jwksRsa = require('jwks-rsa');
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -37,25 +34,6 @@ const logger = winston.createLogger({
 
 app.use(cors());
 app.use(express.json());
-
-// JWT Secret for our own tokens
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
-
-// Auth0 configuration
-const auth0Domain = 'dev-rynbpb65bndtk1ka.us.auth0.com';
-
-// Middleware to verify Auth0 tokens
-const checkJwt = expressJwt({
-  secret: jwksRsa.expressJwtSecret({
-    cache: true,
-    rateLimit: true,
-    jwksRequestsPerMinute: 5,
-    jwksUri: `https://${auth0Domain}/.well-known/jwks.json`
-  }),
-  audience: 'mInTjrehlcPtX1VooFCjNKHAIltAhuQo',
-  issuer: `https://${auth0Domain}/`,
-  algorithms: ['RS256']
-});
 
 // CID storage file path
 const CID_FILE_PATH = path.join(__dirname, 'cids.json');
@@ -135,36 +113,18 @@ async function addCIDToDatabase(cid) {
   await logCIDFile();
 }
 
-// New endpoint for user authentication
-app.post('/auth', checkJwt, (req, res) => {
-  logger.info('Received authentication request');
-  const auth0Token = req.headers.authorization.split(' ')[1];
-  logger.info('Received Auth0 token', { token: auth0Token });
-  
-  try {
-    const decodedToken = jwt.decode(auth0Token);
-    logger.info('Decoded Auth0 token', { decodedToken });
-
-    const worldIdInfo = {
-      nullifier_hash: decodedToken.sub.split('|')[2],
-    };
-    logger.info('Extracted World ID info', { worldIdInfo });
-
-    const token = jwt.sign({ worldIdInfo }, JWT_SECRET, { expiresIn: '1h' });
-    logger.info('Generated new JWT token', { token });
-    
-    const decodedJWT = jwt.verify(token, JWT_SECRET);
-    logger.info('Decoded generated JWT', { decodedJWT });
-    
-    res.json({ token });
-  } catch (error) {
-    logger.error('Error in /auth endpoint', { error: error.message });
-    res.status(500).json({ error: 'Authentication failed' });
+// Middleware to check authentication
+const checkAuth = (req, res, next) => {
+  const nullifierHash = req.headers['x-nullifier-hash'];
+  if (!nullifierHash) {
+    return res.status(401).json({ error: 'Authentication required' });
   }
-});
+  req.nullifierHash = nullifierHash;
+  next();
+};
 
 // Protected route to store data
-app.post('/store-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }), async (req, res) => {
+app.post('/store-data', checkAuth, async (req, res) => {
     logger.info('Received request to store data');
     try {
       logger.info('Received full body', { 
@@ -176,14 +136,8 @@ app.post('/store-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }
       const data = req.body.data;
       logger.info('Processed data', { data });
       logger.info('Full request headers', req.headers);
-      logger.info('Full token payload', req.auth);
   
-      if (!req.auth || !req.auth.worldIdInfo) {
-        logger.error('Token payload:', JSON.stringify(req.auth, null, 2));
-        throw new Error('User information not found in token');
-      }
-  
-      const ownerNullifierHash = req.auth.worldIdInfo.nullifier_hash;
+      const ownerNullifierHash = req.nullifierHash;
       logger.info('Owner nullifier hash', { ownerNullifierHash });
   
       // Assuming data is an array of events
@@ -203,9 +157,8 @@ app.post('/store-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }
   });
 
 // Route to retrieve data
-app.get('/retrieve-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }), async (req, res) => {
+app.get('/retrieve-data', checkAuth, async (req, res) => {
     logger.info('Received request to retrieve data');
-    logger.info('Decoded token:', req.auth);
     try {
       const allCIDs = await getAllCIDsFromDatabase();
       let allData = [];
@@ -213,7 +166,7 @@ app.get('/retrieve-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256']
       for (const cid of allCIDs) {
         try {
           const data = await retrieveDataFromIPFS(cid);
-          allData.push({ ...data, id: cid });
+          allData.push(...data);
         } catch (error) {
           logger.error(`Error retrieving data for CID: ${cid}`, { error: error.message });
           errors.push({ cid, error: error.message });
@@ -227,13 +180,31 @@ app.get('/retrieve-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256']
     }
   });
 
-// Custom error handler
-app.use((err, req, res, next) => {
-  if (err.name === 'UnauthorizedError') {
-    logger.error('JWT Error:', err);
-    return res.status(401).json({ error: 'Invalid token' });
+// New route to clear all data
+app.post('/clear-data', checkAuth, async (req, res) => {
+  try {
+    // 1. Get all CIDs from the database
+    const allCIDs = await getAllCIDsFromDatabase();
+
+    // 2. Attempt to remove each CID from IPFS
+    for (const cid of allCIDs) {
+      try {
+        await ipfs.pin.rm(cid);
+        logger.info(`Unpinned CID: ${cid}`);
+      } catch (error) {
+        logger.warn(`Failed to unpin CID: ${cid}`, error);
+      }
+    }
+
+    // 3. Clear the CIDs from your local database
+    await fs.writeFile(CID_FILE_PATH, '[]');
+    
+    logger.info('All data cleared');
+    res.json({ success: true, message: 'All data cleared' });
+  } catch (error) {
+    logger.error('Error clearing data', { error: error.message });
+    res.status(500).json({ success: false, error: error.message });
   }
-  next(err);
 });
 
 // Start the server and test IPFS connection

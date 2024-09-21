@@ -1,6 +1,4 @@
-// background.js
-
-let jwtToken = null;
+let nullifierHash = null;
 
 // Function to decode JWT without verification
 function decodeJwt(token) {
@@ -35,27 +33,13 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       .then(response => response.json())
       .then(data => {
         console.log('Received Auth0 tokens:', JSON.stringify(data, null, 2));
-        // Exchange Auth0 token for our own JWT
-        return fetch('http://localhost:3000/auth', {
-          method: 'POST',
-          headers: { 
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${data.id_token}`
-          },
-        });
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Received JWT from our server:', JSON.stringify(data, null, 2));
-        jwtToken = data.token;
-        const decodedJwt = decodeJwt(jwtToken);
-        console.log('Decoded JWT:', JSON.stringify(decodedJwt, null, 2));
-        // Store the tokens securely
+        const decodedToken = decodeJwt(data.id_token);
+        nullifierHash = decodedToken.sub.split('|')[2];
         chrome.storage.local.set({
-          token: data.token,
+          nullifierHash: nullifierHash,
           authenticated: true
         }, function() {
-          console.log('Token saved and authenticated set to true in chrome.storage.local');
+          console.log('Nullifier hash saved and authenticated set to true');
           sendResponse({success: true});
         });
       })
@@ -87,22 +71,22 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 });
   
 function syncData() {
-  chrome.storage.local.get({collectedData: [], authenticated: false, token: null}, function(result) {
-    console.log('Sync check - Auth:', result.authenticated, 'Data points:', result.collectedData.length, 'Token exists:', !!result.token);
-    if (result.authenticated && result.collectedData.length > 0 && result.token) {
-      console.log('Token being sent:', result.token);
-      console.log('Data being sent to server:', result.collectedData); // New log
+  chrome.storage.local.get({collectedData: [], authenticated: false, nullifierHash: null}, function(result) {
+    console.log('Sync check - Auth:', result.authenticated, 'Data points:', result.collectedData.length, 'Nullifier hash exists:', !!result.nullifierHash);
+    if (result.authenticated && result.collectedData.length > 0 && result.nullifierHash) {
+      console.log('Nullifier hash being sent:', result.nullifierHash);
+      console.log('Data being sent to server:', result.collectedData);
 
       const headers = {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${result.token}`
+        'X-Nullifier-Hash': result.nullifierHash
       };
       console.log('Headers being sent:', headers);
 
       fetch('http://localhost:3000/store-data', {
         method: 'POST',
         headers: headers,
-        body: JSON.stringify({data: result.collectedData}), // Wrap in {data: ...}
+        body: JSON.stringify({data: result.collectedData})
       })
       .then(response => {
         if (!response.ok) {
@@ -123,15 +107,15 @@ function syncData() {
       })
       .catch(error => {
         console.error('Error syncing data:', error);
-        // If there's an authentication error, clear the stored token and set authenticated to false
-        if (error.message.includes('401') || error.message.includes('User information not found in token')) {
-          chrome.storage.local.set({token: null, authenticated: false}, function() {
+        // If there's an authentication error, clear the stored nullifier hash and set authenticated to false
+        if (error.message.includes('401')) {
+          chrome.storage.local.set({nullifierHash: null, authenticated: false}, function() {
             console.log('Cleared authentication due to error');
           });
         }
       });
     } else {
-      console.log('Not syncing data. Authenticated:', result.authenticated, 'Data points:', result.collectedData.length, 'Token exists:', !!result.token);
+      console.log('Not syncing data. Authenticated:', result.authenticated, 'Data points:', result.collectedData.length, 'Nullifier hash exists:', !!result.nullifierHash);
     }
   });
 }

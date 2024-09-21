@@ -3,9 +3,7 @@ import { IDKitWidget, VerificationLevel } from '@worldcoin/idkit';
 
 const WorldIDAuth = ({ onSuccess }) => {
   const handleVerify = async (proof) => {
-    // Here you would typically send the proof to your backend for verification
     console.log("Proof received:", proof);
-    // For this example, we'll just call onSuccess directly
     onSuccess(proof);
   };
 

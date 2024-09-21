@@ -1,39 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import './App.css';
-import WorldIDAuth from './components/WorldIDAuth';
-import DataMarketplace from './components/DataMarketplace';
+import UserPage from './components/UserPage';
+import BuyerPage from './components/BuyerPage';
 
 function App() {
-  const [isVerified, setIsVerified] = useState(false);
-  const [userInfo, setUserInfo] = useState(null);
-
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      setIsVerified(true);
-      // You might want to decode the token to get the user info
-      // For now, we'll just set a placeholder
-      setUserInfo({ nullifier_hash: 'placeholder' });
-    }
-  }, []);
-
-  const handleSuccess = (proof) => {
-    setIsVerified(true);
-    setUserInfo(proof);
-    localStorage.setItem('token', proof.token); // Assuming the proof contains a token
-  };
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Privacy-Preserving Data Marketplace</h1>
-        {!isVerified ? (
-          <WorldIDAuth onSuccess={handleSuccess} />
-        ) : (
-          <DataMarketplace userNullifierHash={userInfo.nullifier_hash} />
-        )}
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav className="bg-gray-800 p-4">
+          <ul className="flex justify-center space-x-4">
+            <li>
+              <Link to="/user" className="text-white hover:text-gray-300">User Page</Link>
+            </li>
+            <li>
+              <Link to="/buyer" className="text-white hover:text-gray-300">Buyer Page</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <header className="App-header">
+          <h1 className="text-3xl font-bold mb-4">Privacy-Preserving Data Marketplace</h1>
+          <Routes>
+            <Route path="/user" element={<UserPage />} />
+            <Route path="/buyer" element={<BuyerPage />} />
+            <Route path="/" element={<h2>Welcome! Please select a page.</h2>} />
+          </Routes>
+        </header>
+      </div>
+    </Router>
   );
 }
 
