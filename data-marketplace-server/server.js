@@ -1,4 +1,5 @@
 require('dotenv').config();
+const http = require('http');
 const express = require('express');
 const cors = require('cors');
 const { create } = require('ipfs-http-client');
@@ -11,7 +12,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Setup IPFS client
-const ipfs = create({ url: process.env.IPFS_URL || 'http://localhost:5001' });
+const ipfs = create({
+    host: 'localhost',
+    port: 5001,
+    protocol: 'http'
+});
 
 // Setup logger
 const logger = winston.createLogger({
@@ -53,30 +58,42 @@ const checkJwt = expressJwt({
 
 // Helper function to store data on IPFS
 async function storeDataOnIPFS(data) {
-  try {
-    const result = await ipfs.add(JSON.stringify(data));
-    logger.info('Stored data with CID', { cid: result.path });
-    return result.path;
-  } catch (error) {
-    logger.error('Error storing data on IPFS', { error: error.message });
-    throw error;
+    try {
+      const jsonString = JSON.stringify(data);
+      logger.info('Storing data on IPFS', { jsonString });
+      const result = await ipfs.add(jsonString);
+      logger.info('Stored data with CID', { cid: result.path });
+      return result.path;
+    } catch (error) {
+      logger.error('Error storing data on IPFS', { error: error.message });
+      throw error;
+    }
   }
-}
 
 // Helper function to retrieve data from IPFS
 async function retrieveDataFromIPFS(cid) {
-  try {
-    const stream = ipfs.cat(cid);
-    let data = '';
-    for await (const chunk of stream) {
-      data += chunk.toString();
+    let rawData = '';
+    try {
+      const stream = ipfs.cat(cid);
+      for await (const chunk of stream) {
+        rawData += chunk.toString();
+      }
+      logger.info('Raw data from IPFS:', { rawData });
+      if (!rawData) {
+        throw new Error('No data retrieved from IPFS');
+      }
+      // Convert the comma-separated string of ASCII codes to a proper string
+      const dataString = rawData.split(',').map(num => String.fromCharCode(parseInt(num))).join('');
+      logger.info('Converted data string:', { dataString });
+      const parsedData = JSON.parse(dataString);
+      logger.info('Parsed data from IPFS:', { parsedData });
+      return parsedData;
+    } catch (error) {
+      logger.error('Error retrieving or parsing data from IPFS', { error: error.message, cid, rawData });
+      throw error;
     }
-    return JSON.parse(data);
-  } catch (error) {
-    logger.error('Error retrieving data from IPFS', { error: error.message });
-    throw error;
   }
-}
+
 
 // New endpoint for user authentication
 app.post('/auth', checkJwt, (req, res) => {
@@ -135,6 +152,36 @@ app.get('/retrieve-data/:cid', expressJwt({ secret: JWT_SECRET, algorithms: ['HS
   }
 });
 
+// Temporary endpoint for testing - remove in production
+app.get('/test-token', (req, res) => {
+    const token = jwt.sign({ worldIdInfo: { nullifier_hash: 'test_hash' } }, JWT_SECRET, { expiresIn: '1h' });
+    res.json({ token });
+  });
+
+app.get('/ipfs-health', async (req, res) => {
+  try {
+    logger.info('Attempting IPFS health check');
+    const version = await ipfs.version();
+    logger.info('IPFS health check successful', { version });
+    res.json({ status: 'ok', version });
+  } catch (error) {
+    logger.error('IPFS health check failed', { error: error.message, stack: error.stack });
+    res.status(500).json({ status: 'error', message: error.message, stack: error.stack });
+  }
+});
+
+async function testIPFSConnection() {
+    try {
+      logger.info('Testing IPFS connection');
+      const version = await ipfs.version();
+      logger.info('IPFS connection successful', { version });
+      return true;
+    } catch (error) {
+      logger.error('IPFS connection test failed', { error: error.message, stack: error.stack });
+      return false;
+    }
+  }
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   logger.error('Server error', { error: err.message, stack: err.stack });
@@ -145,6 +192,13 @@ app.use((err, req, res, next) => {
   }
 });
 
-app.listen(port, () => {
+// Start the server and test IPFS connection
+app.listen(port, async () => {
   logger.info(`Server running at http://localhost:${port}`);
+  const ipfsConnected = await testIPFSConnection();
+  if (ipfsConnected) {
+    logger.info('IPFS connection established');
+  } else {
+    logger.warn('Failed to establish IPFS connection');
+  }
 });

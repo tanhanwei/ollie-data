@@ -108,3 +108,337 @@
 2024-09-21T00:28:46.243Z info: Stored data with CID {
   "cid": "QmdQSvqqthbp3s4t46zWDNN6PTJLKHdki3f77ynV3kFJWN"
 }
+2024-09-21T02:18:16.089Z info: Server running at http://localhost:3000 
+2024-09-21T02:19:22.624Z error: Server error {
+  "error": "Format is Authorization: Bearer [token]",
+  "stack": "UnauthorizedError: Format is Authorization: Bearer [token]\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:107:39\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:4:12)\n    at middleware (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:67:16)\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)"
+}
+2024-09-21T02:20:28.356Z error: Error retrieving data from IPFS {
+  "error": "invalid path \"YOUR_CID_HERE\": path does not have enough components"
+}
+2024-09-21T02:20:28.356Z error: Error retrieving data {
+  "error": "invalid path \"YOUR_CID_HERE\": path does not have enough components"
+}
+2024-09-21T02:21:43.554Z error: Server error {
+  "error": "Format is Authorization: Bearer [token]",
+  "stack": "UnauthorizedError: Format is Authorization: Bearer [token]\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:107:39\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:4:12)\n    at middleware (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:67:16)\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)"
+}
+2024-09-21T02:22:59.429Z info: Received authentication request 
+2024-09-21T02:22:59.429Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjg4NTM3OCwiZXhwIjoxNzI2OTIxMzc4LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.pd_bXppNCTkVOuimL7tT2S8CnN1G3-GMLM9YeS6Y4akwR76lg7u253ZiyN11OrV51wCPFt7igcR3CAupsxiqthfJ_PQ3SiMij7NxxuJcNdsKGO-puTnq9742OapssW11XsiB4pzQJ66gMZbBgfen1THV0-N9icbl351URx3W2S0X8tizzkiwglDdlBUxUWFAA7QQ_gW9dD_gf-VgpCAIjDME4EWIswSpNCHu8OoMB02msBFizIw3LxvPAJVz5QMIi20sHL_EhzojcNnGaQvYsGOUzCu-poV1kHvEbPBqRe5LVFseZL2j7Z1JDdQLgEBBYkL0UtoazvFMI-afxkYs4g"
+}
+2024-09-21T02:22:59.430Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726885378,
+    "exp": 1726921378,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T02:22:59.430Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T02:22:59.431Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY4ODUzNzksImV4cCI6MTcyNjg4ODk3OX0.Bi2Ct2w4F4J32CtPOwEXIv-KIOLea42A5qbATibMnV8"
+}
+2024-09-21T02:23:02.141Z info: Received request to store data 
+2024-09-21T02:23:02.141Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726885356585,
+      "pseudo_id": "user_w12m1mesv",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T02:23:02.204Z info: Stored data with CID {
+  "cid": "QmS3j2qnpW2V2HYV8F46TjvALhARhUKdsgdo2tay9NamWb"
+}
+2024-09-21T02:23:02.205Z info: Stored data with CID {
+  "cid": "QmS3j2qnpW2V2HYV8F46TjvALhARhUKdsgdo2tay9NamWb"
+}
+2024-09-21T02:23:43.607Z info: Received request to store data 
+2024-09-21T02:23:43.608Z info: Received data {
+  "data": {
+    "test": "data"
+  }
+}
+2024-09-21T02:23:43.663Z info: Stored data with CID {
+  "cid": "Qmc3duNV1Vk2JY8BXEDV2R8UqoZYzvPHvu6AdMtMoUdw4r"
+}
+2024-09-21T02:23:43.663Z info: Stored data with CID {
+  "cid": "Qmc3duNV1Vk2JY8BXEDV2R8UqoZYzvPHvu6AdMtMoUdw4r"
+}
+2024-09-21T02:24:09.519Z error: Server error {
+  "error": "jwt malformed",
+  "stack": "UnauthorizedError: jwt malformed\n    at new UnauthorizedError (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/errors/UnauthorizedError.js:22:28)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:139:38\n    at step (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:33:23)\n    at Object.next (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:14:53)\n    at fulfilled (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express-jwt/dist/index.js:5:58)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+}
+2024-09-21T02:25:38.908Z error: Error retrieving data from IPFS {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)"
+}
+2024-09-21T02:25:38.908Z error: Error retrieving data {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)"
+}
+2024-09-21T02:26:58.585Z info: Received request to store data 
+2024-09-21T02:26:58.585Z info: Received data {
+  "data": {
+    "testKey": "testValue",
+    "number": 42
+  }
+}
+2024-09-21T02:26:58.637Z info: Stored data with CID {
+  "cid": "Qma62fM8aSfLK8fWJQ7VWnKcVwEG3UHpVPZvPtxWk9AEXF"
+}
+2024-09-21T02:26:58.638Z info: Stored data with CID {
+  "cid": "Qma62fM8aSfLK8fWJQ7VWnKcVwEG3UHpVPZvPtxWk9AEXF"
+}
+2024-09-21T02:27:30.713Z error: Error retrieving data from IPFS {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)"
+}
+2024-09-21T02:27:30.713Z error: Error retrieving data {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)"
+}
+2024-09-21T02:28:44.328Z info: Server running at http://localhost:3000 
+2024-09-21T02:29:55.902Z info: Received request to store data 
+2024-09-21T02:29:55.902Z info: Received data {
+  "data": {
+    "test": "data"
+  }
+}
+2024-09-21T02:29:55.957Z info: Stored data with CID {
+  "cid": "Qmc3duNV1Vk2JY8BXEDV2R8UqoZYzvPHvu6AdMtMoUdw4r"
+}
+2024-09-21T02:29:55.958Z info: Stored data with CID {
+  "cid": "Qmc3duNV1Vk2JY8BXEDV2R8UqoZYzvPHvu6AdMtMoUdw4r"
+}
+2024-09-21T02:30:43.802Z info: Raw data from IPFS: {
+  "data": "123,34,116,101,115,116,34,58,34,100,97,116,97,34,125"
+}
+2024-09-21T02:30:43.803Z error: Error retrieving data {
+  "error": "data is not defined"
+}
+2024-09-21T02:33:54.777Z info: Server running at http://localhost:3000 
+2024-09-21T02:35:30.149Z info: Received request to store data 
+2024-09-21T02:35:30.150Z info: Received data {
+  "data": {
+    "test": "data"
+  }
+}
+2024-09-21T02:35:30.203Z info: Stored data with CID {
+  "cid": "Qmc3duNV1Vk2JY8BXEDV2R8UqoZYzvPHvu6AdMtMoUdw4r"
+}
+2024-09-21T02:35:30.203Z info: Stored data with CID {
+  "cid": "Qmc3duNV1Vk2JY8BXEDV2R8UqoZYzvPHvu6AdMtMoUdw4r"
+}
+2024-09-21T02:36:04.495Z info: Raw data from IPFS: {
+  "data": "123,34,116,101,115,116,34,58,34,100,97,116,97,34,125"
+}
+2024-09-21T02:36:04.496Z error: Error retrieving or parsing data from IPFS {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)",
+  "cid": "Qmc3duNV1Vk2JY8BXEDV2R8UqoZYzvPHvu6AdMtMoUdw4r"
+}
+2024-09-21T02:36:04.496Z error: Error retrieving data {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)"
+}
+2024-09-21T02:39:09.227Z info: Server running at http://localhost:3000 
+2024-09-21T02:40:15.274Z info: Received request to store data 
+2024-09-21T02:40:15.274Z info: Received data {
+  "data": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T02:40:15.275Z info: Storing data on IPFS {
+  "jsonString": "{\"testKey\":\"testValue\",\"number\":42,\"nested\":{\"key\":\"value\"}}"
+}
+2024-09-21T02:40:15.347Z info: Stored data with CID {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ"
+}
+2024-09-21T02:40:15.347Z info: Stored data with CID {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ"
+}
+2024-09-21T02:41:01.743Z info: Raw data from IPFS: {
+  "data": "123,34,116,101,115,116,75,101,121,34,58,34,116,101,115,116,86,97,108,117,101,34,44,34,110,117,109,98,101,114,34,58,52,50,44,34,110,101,115,116,101,100,34,58,123,34,107,101,121,34,58,34,118,97,108,117,101,34,125,125"
+}
+2024-09-21T02:41:01.743Z error: Error retrieving data {
+  "error": "data is not defined"
+}
+2024-09-21T02:43:15.432Z info: Server running at http://localhost:3000 
+2024-09-21T02:43:27.809Z info: Raw data from IPFS: {
+  "rawData": "123,34,116,101,115,116,75,101,121,34,58,34,116,101,115,116,86,97,108,117,101,34,44,34,110,117,109,98,101,114,34,58,52,50,44,34,110,101,115,116,101,100,34,58,123,34,107,101,121,34,58,34,118,97,108,117,101,34,125,125"
+}
+2024-09-21T02:43:27.809Z error: Error retrieving or parsing data from IPFS {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)",
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ",
+  "rawData": "123,34,116,101,115,116,75,101,121,34,58,34,116,101,115,116,86,97,108,117,101,34,44,34,110,117,109,98,101,114,34,58,52,50,44,34,110,101,115,116,101,100,34,58,123,34,107,101,121,34,58,34,118,97,108,117,101,34,125,125"
+}
+2024-09-21T02:43:27.809Z error: Error retrieving data {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)"
+}
+2024-09-21T02:46:19.623Z info: Server running at http://localhost:3000 
+2024-09-21T02:47:49.479Z info: Raw data from IPFS: {
+  "rawData": "123,34,116,101,115,116,75,101,121,34,58,34,116,101,115,116,86,97,108,117,101,34,44,34,110,117,109,98,101,114,34,58,52,50,44,34,110,101,115,116,101,100,34,58,123,34,107,101,121,34,58,34,118,97,108,117,101,34,125,125"
+}
+2024-09-21T02:47:49.480Z info: Converted data string: {
+  "dataString": "{\"testKey\":\"testValue\",\"number\":42,\"nested\":{\"key\":\"value\"}}"
+}
+2024-09-21T02:47:49.480Z info: Parsed data from IPFS: {
+  "parsedData": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T02:47:49.480Z info: Retrieved data from IPFS {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ",
+  "data": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T02:50:07.043Z info: Server running at http://localhost:3000 
+2024-09-21T02:50:10.611Z error: IPFS health check failed {
+  "error": "no protocol with name: quic-v1"
+}
+2024-09-21T02:53:58.921Z info: Server running at http://localhost:3000 
+2024-09-21T02:54:03.003Z info: Attempting IPFS health check 
+2024-09-21T02:54:03.042Z error: IPFS health check failed {
+  "error": "no protocol with name: quic-v1",
+  "stack": "Error: no protocol with name: quic-v1\n    at Protocols (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/multiaddr/src/protocols-table.js:22:11)\n    at stringToStringTuples (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/multiaddr/src/codec.js:48:19)\n    at stringToBytes (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/multiaddr/src/codec.js:220:13)\n    at Object.fromString (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/multiaddr/src/codec.js:231:10)\n    at new Multiaddr (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/multiaddr/src/index.js:56:26)\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/ipfs-http-client/cjs/src/id.js:23:53\n    at Array.map (<anonymous>)\n    at Object.id (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/ipfs-http-client/cjs/src/id.js:23:43)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:163:16"
+}
+2024-09-21T03:08:54.356Z info: Server running at http://localhost:3000 
+2024-09-21T03:08:54.359Z info: Testing IPFS connection 
+2024-09-21T03:08:54.378Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T03:08:54.378Z info: IPFS connection established 
+2024-09-21T03:09:04.120Z info: Attempting IPFS health check 
+2024-09-21T03:09:04.127Z info: IPFS health check successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T03:15:11.682Z info: Received request to store data 
+2024-09-21T03:15:11.683Z info: Received data {
+  "data": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T03:15:11.683Z info: Storing data on IPFS {
+  "jsonString": "{\"testKey\":\"testValue\",\"number\":42,\"nested\":{\"key\":\"value\"}}"
+}
+2024-09-21T03:15:11.719Z info: Stored data with CID {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ"
+}
+2024-09-21T03:15:11.720Z info: Stored data with CID {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ"
+}
+2024-09-21T03:16:00.658Z info: Raw data from IPFS: {
+  "rawData": "123,34,116,101,115,116,75,101,121,34,58,34,116,101,115,116,86,97,108,117,101,34,44,34,110,117,109,98,101,114,34,58,52,50,44,34,110,101,115,116,101,100,34,58,123,34,107,101,121,34,58,34,118,97,108,117,101,34,125,125"
+}
+2024-09-21T03:16:00.658Z error: Error retrieving or parsing data from IPFS {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)",
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ",
+  "rawData": "123,34,116,101,115,116,75,101,121,34,58,34,116,101,115,116,86,97,108,117,101,34,44,34,110,117,109,98,101,114,34,58,52,50,44,34,110,101,115,116,101,100,34,58,123,34,107,101,121,34,58,34,118,97,108,117,101,34,125,125"
+}
+2024-09-21T03:16:00.658Z error: Error retrieving data {
+  "error": "Unexpected non-whitespace character after JSON at position 3 (line 1 column 4)"
+}
+2024-09-21T03:18:43.372Z info: Server running at http://localhost:3000 
+2024-09-21T03:18:43.374Z info: Testing IPFS connection 
+2024-09-21T03:18:43.392Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T03:18:43.392Z info: IPFS connection established 
+2024-09-21T03:18:50.939Z info: Attempting IPFS health check 
+2024-09-21T03:18:50.946Z info: IPFS health check successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T03:19:40.990Z info: Received request to store data 
+2024-09-21T03:19:40.991Z info: Received data {
+  "data": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T03:19:40.991Z info: Storing data on IPFS {
+  "jsonString": "{\"testKey\":\"testValue\",\"number\":42,\"nested\":{\"key\":\"value\"}}"
+}
+2024-09-21T03:19:41.028Z info: Stored data with CID {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ"
+}
+2024-09-21T03:19:41.028Z info: Stored data with CID {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ"
+}
+2024-09-21T03:20:10.481Z info: Raw data from IPFS: {
+  "rawData": "123,34,116,101,115,116,75,101,121,34,58,34,116,101,115,116,86,97,108,117,101,34,44,34,110,117,109,98,101,114,34,58,52,50,44,34,110,101,115,116,101,100,34,58,123,34,107,101,121,34,58,34,118,97,108,117,101,34,125,125"
+}
+2024-09-21T03:20:10.482Z info: Converted data string: {
+  "dataString": "{\"testKey\":\"testValue\",\"number\":42,\"nested\":{\"key\":\"value\"}}"
+}
+2024-09-21T03:20:10.482Z info: Parsed data from IPFS: {
+  "parsedData": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
+2024-09-21T03:20:10.482Z info: Retrieved data from IPFS {
+  "cid": "QmNiELtdAM3W6sL7eFyHSWiEPPgx4X1VLxWRXTiQVDMSnQ",
+  "data": {
+    "testKey": "testValue",
+    "number": 42,
+    "nested": {
+      "key": "value"
+    }
+  }
+}
