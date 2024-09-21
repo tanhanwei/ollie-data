@@ -20,7 +20,7 @@ function App() {
         </nav>
 
         <header className="App-header">
-          <h1 className="text-3xl font-bold mb-4">Privacy-Preserving Data Marketplace</h1>
+          <h1 className="text-3xl font-bold mb-4">Ollie Cookies Marketplace</h1>
           <Routes>
             <Route path="/user" element={<UserPage />} />
             <Route path="/buyer" element={<BuyerPage />} />

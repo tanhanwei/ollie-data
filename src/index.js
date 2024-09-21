@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Clear authentication state in development mode
+if (process.env.NODE_ENV === 'development') {
+  localStorage.removeItem('nullifierHash');
+  console.log('Authentication state reset for development');
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

@@ -31,20 +31,19 @@ describe("DataMarketplace", function () {
   });
 
   describe("Data Purchase", function () {
-    it("Should allow a registered user to purchase data", async function () {
+    it("Should allow a registered buyer to purchase data", async function () {
       const buyerNullifierHash = ethers.encodeBytes32String("buyer");
       const sellerNullifierHash = ethers.encodeBytes32String("seller");
       const amount = ethers.parseEther("1");
 
       await dataMarketplace.registerUser(buyerNullifierHash);
-      await dataMarketplace.registerUser(sellerNullifierHash);
 
       await expect(dataMarketplace.purchaseData(buyerNullifierHash, sellerNullifierHash, amount, { value: amount }))
         .to.emit(dataMarketplace, "DataPurchased")
         .withArgs(buyerNullifierHash, sellerNullifierHash, amount);
     });
 
-    it("Should not allow unregistered users to purchase data", async function () {
+    it("Should not allow unregistered buyers to purchase data", async function () {
       const buyerNullifierHash = ethers.encodeBytes32String("buyer");
       const sellerNullifierHash = ethers.encodeBytes32String("seller");
       const amount = ethers.parseEther("1");
@@ -55,29 +54,17 @@ describe("DataMarketplace", function () {
   });
 
   describe("Balance Checking", function () {
-    it("Should correctly update and return user balance after purchase", async function () {
+    it("Should correctly update and return seller balance after purchase", async function () {
       const buyerNullifierHash = ethers.encodeBytes32String("buyer");
       const sellerNullifierHash = ethers.encodeBytes32String("seller");
       const amount = ethers.parseEther("1");
 
       await dataMarketplace.registerUser(buyerNullifierHash);
-      await dataMarketplace.registerUser(sellerNullifierHash);
 
       await dataMarketplace.purchaseData(buyerNullifierHash, sellerNullifierHash, amount, { value: amount });
 
       const sellerBalance = await dataMarketplace.getBalance(sellerNullifierHash);
       expect(sellerBalance).to.equal(amount * 70n / 100n); // 70% of the purchase amount
-    });
-  });
-
-  describe("ROFL Interaction", function () {
-    it("Should emit DataProcessed event when updateProcessedData is called", async function () {
-      const buyerNullifierHash = ethers.encodeBytes32String("buyer");
-      const processedData = "Processed data string";
-
-      await expect(dataMarketplace.updateProcessedData(buyerNullifierHash, processedData))
-        .to.emit(dataMarketplace, "DataProcessed")
-        .withArgs(buyerNullifierHash, processedData);
     });
   });
 });

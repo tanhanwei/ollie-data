@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.27;
 
-import "@oasisprotocol/sapphire-contracts/contracts/Sapphire.sol";
-
 contract DataMarketplace {
     mapping(bytes32 => bool) public registeredUsers;
     mapping(bytes32 => uint256) public userBalances;
@@ -19,14 +17,12 @@ contract DataMarketplace {
 
     function purchaseData(bytes32 buyerNullifierHash, bytes32 sellerNullifierHash, uint256 amount) public payable {
         require(registeredUsers[buyerNullifierHash], "Buyer not registered");
-        require(registeredUsers[sellerNullifierHash], "Seller not registered");
+        // Removed the seller registration check
         require(msg.value >= amount, "Insufficient payment");
 
         uint256 sellerAmount = (amount * (100 - PLATFORM_FEE)) / 100;
         userBalances[sellerNullifierHash] += sellerAmount;
 
-        // Here you would trigger ROFL processing
-        // For now, we'll just emit an event
         emit DataPurchased(buyerNullifierHash, sellerNullifierHash, amount);
     }
 
@@ -36,8 +32,6 @@ contract DataMarketplace {
 
     // Function to be called by ROFL to update processed data
     function updateProcessedData(bytes32 buyerNullifierHash, string memory processedData) public {
-        // In a real implementation, this would be restricted to only be callable by ROFL
-        // For now, we'll just emit an event
         emit DataProcessed(buyerNullifierHash, processedData);
     }
 

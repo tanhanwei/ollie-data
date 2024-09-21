@@ -1,6 +1,5 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
-import "@typechain/hardhat";
 import "@oasisprotocol/sapphire-hardhat";
 import * as dotenv from "dotenv";
 
