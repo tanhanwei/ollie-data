@@ -2596,3 +2596,487 @@
 2024-09-21T07:41:00.477Z info: Stored data with CID {
   "cid": "QmPafUoZLk26EdaiadJueKR7gco2uST5qq4LjnUEpTrAST"
 }
+2024-09-21T08:00:17.840Z info: Server running at http://localhost:3000 
+2024-09-21T08:00:17.841Z info: Testing IPFS connection 
+2024-09-21T08:00:17.859Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T08:00:17.860Z info: IPFS connection established 
+2024-09-21T08:00:48.169Z info: Received authentication request 
+2024-09-21T08:00:48.169Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwNTY0NywiZXhwIjoxNzI2OTQxNjQ3LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.kO21DOHHbg9uEvQs7I6iNEJUCic19KY-BZqThqPTMq6LMawILdV_P03V5cMlSIXk0jad90O3mgwFiHZQ8rnnrWfBcsHL6EzxCFVJkTTYVMzPFwVmvCfz62bFduPA-NS2VelcOWOCxlqa3u8AtDTdavTPjpBQPjkW8jsGD859ipU0aXf3oKIJ9quMhD66MbpibI6NpIhwO5bzXGsGi3xlb4XhGdyFNac76KdPZpdf4Q6UpRGAIt4GK4rjXsOvQETYgSPYRdMt_2Dqo6eq2vNzAbzv2A2J5o8SFJ_i0OhIV_jyOCibSZWlXQNRb-T_rxoJ3jB7FnkZyrjT-4g0KWnvGA"
+}
+2024-09-21T08:00:48.170Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726905647,
+    "exp": 1726941647,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T08:00:48.170Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T08:00:48.172Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDU2NDgsImV4cCI6MTcyNjkwOTI0OH0.SlMy_3XJpSJs4_8BgOCkY0hJsl7WmTy2AcivtsWj1HI"
+}
+2024-09-21T08:00:48.173Z info: Decoded generated JWT {
+  "decodedJWT": {
+    "worldIdInfo": {
+      "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    "iat": 1726905648,
+    "exp": 1726909248
+  }
+}
+2024-09-21T08:00:55.050Z info: Received request to store data 
+2024-09-21T08:00:55.050Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726905631523,
+      "pseudo_id": "user_8056pfm8z",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T08:00:55.050Z info: Full request headers {
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "content-length": "147",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDU2NDgsImV4cCI6MTcyNjkwOTI0OH0.SlMy_3XJpSJs4_8BgOCkY0hJsl7WmTy2AcivtsWj1HI",
+  "accept": "*/*",
+  "origin": "chrome-extension://mmmaljibofhlnclinlnlphhbobkjfanf",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2024-09-21T08:00:55.050Z info: Full token payload {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726905648,
+  "exp": 1726909248
+}
+2024-09-21T08:00:55.050Z info: Owner nullifier hash {
+  "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+}
+2024-09-21T08:00:55.051Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"id.worldcoin.org\",\"event_name\":\"page_view\",\"event_timestamp\":1726905631523,\"pseudo_id\":\"user_8056pfm8z\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"}]"
+}
+2024-09-21T08:00:55.115Z info: Stored data with CID {
+  "cid": "QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH"
+}
+2024-09-21T08:00:55.120Z info: Added new CID to database: {
+  "cid": "QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH"
+}
+2024-09-21T08:00:55.120Z info: Current contents of cids.json: {
+  "cids": "[\n  \"QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH\"\n]"
+}
+2024-09-21T08:00:55.120Z info: Stored data with CID {
+  "cid": "QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH"
+}
+2024-09-21T08:01:55.040Z info: Received request to store data 
+2024-09-21T08:01:55.041Z info: Received data {
+  "data": [
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726905690544,
+      "pseudo_id": "user_69kcd8tb0",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T08:01:55.041Z info: Full request headers {
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "content-length": "141",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDU2NDgsImV4cCI6MTcyNjkwOTI0OH0.SlMy_3XJpSJs4_8BgOCkY0hJsl7WmTy2AcivtsWj1HI",
+  "accept": "*/*",
+  "origin": "chrome-extension://mmmaljibofhlnclinlnlphhbobkjfanf",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2024-09-21T08:01:55.041Z info: Full token payload {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726905648,
+  "exp": 1726909248
+}
+2024-09-21T08:01:55.041Z info: Owner nullifier hash {
+  "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+}
+2024-09-21T08:01:55.041Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"nus.edu.sg\",\"event_name\":\"page_view\",\"event_timestamp\":1726905690544,\"pseudo_id\":\"user_69kcd8tb0\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"}]"
+}
+2024-09-21T08:01:55.095Z info: Stored data with CID {
+  "cid": "QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7"
+}
+2024-09-21T08:01:55.100Z info: Added new CID to database: {
+  "cid": "QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7"
+}
+2024-09-21T08:01:55.101Z info: Current contents of cids.json: {
+  "cids": "[\n  \"QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH\",\n  \"QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7\"\n]"
+}
+2024-09-21T08:01:55.101Z info: Stored data with CID {
+  "cid": "QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7"
+}
+2024-09-21T08:02:59.893Z info: Received request to retrieve data 
+2024-09-21T08:02:59.893Z info: Decoded token: {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726905648,
+  "exp": 1726909248
+}
+2024-09-21T08:02:59.900Z info: Raw data from IPFS: {
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,105,100,46,119,111,114,108,100,99,111,105,110,46,111,114,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,53,54,51,49,53,50,51,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,56,48,53,54,112,102,109,56,122,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:02:59.900Z error: Error retrieving or parsing data from IPFS {
+  "error": "Unexpected non-whitespace character after JSON at position 2 (line 1 column 3)",
+  "cid": "QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH",
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,105,100,46,119,111,114,108,100,99,111,105,110,46,111,114,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,53,54,51,49,53,50,51,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,56,48,53,54,112,102,109,56,122,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:02:59.901Z error: Error retrieving data {
+  "error": "Unexpected non-whitespace character after JSON at position 2 (line 1 column 3)"
+}
+2024-09-21T08:09:32.796Z info: Server running at http://localhost:3000 
+2024-09-21T08:09:32.797Z info: Testing IPFS connection 
+2024-09-21T08:09:32.815Z info: IPFS connection successful {
+  "version": {
+    "version": "0.30.0",
+    "commit": "846c5ccf6",
+    "repo": "16",
+    "system": "arm64/darwin",
+    "golang": "go1.23.1",
+    "ipfs-http-client": "1.0.0"
+  }
+}
+2024-09-21T08:09:32.815Z info: IPFS connection established 
+2024-09-21T08:09:58.597Z info: Received authentication request 
+2024-09-21T08:09:58.598Z info: Received Auth0 token {
+  "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkFLQU16T05kZm00a0N1UlVaYVNUMSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yeW5icGI2NWJuZHRrMWthLnVzLmF1dGgwLmNvbS8iLCJhdWQiOiJtSW5UanJlaGxjUHRYMVZvb0ZDak5LSEFJbHRBaHVRbyIsImlhdCI6MTcyNjkwNjE5NywiZXhwIjoxNzI2OTQyMTk3LCJzdWIiOiJvYXV0aDJ8V29ybGQtSUR8MHgwYzQ0ZjQ3NmU1ODNlNDc2NTRjOWEyNzZhNzRlYWYyODQwNWY5Y2RlNjg3NmMyN2M4YjY0ZDhmY2U0NDBjYWMzIiwic2lkIjoiNGdFYUZEMmY2ekZncXQyME1lRldqV2UxTlM1bUdtOWgifQ.Xln1cq-84z9tKd5ssyK6QxAa_9Tv2sPK2fOEdf7efsj80uUkOd_qvOjTd4Zq0-asgTAiT5C7HpJmw06SIft5G6nvLy-BcHUeCTA9lvcB8FrI1tsuFH7qALEICce2lsQP0GFXB0-ER466XLoi7Scu1KXWg6BzQQ70f86OTOfLVpuYGUnwSQXY0RRC1dmluxvG_Vc2WgKmkpi6Wj7st4hmo40_V-OPoEadda_UKw4jhQXjiioNetwESmJOUJJGdlG6YsB2XBxw7eBzVWJhmQpG4lT5xv1zjqeRUSJUeIDXRmeROt51oadG0qNbemliBgQQPwkvq7epAhMZL1AEab2vBg"
+}
+2024-09-21T08:09:58.598Z info: Decoded Auth0 token {
+  "decodedToken": {
+    "iss": "https://dev-rynbpb65bndtk1ka.us.auth0.com/",
+    "aud": "mInTjrehlcPtX1VooFCjNKHAIltAhuQo",
+    "iat": 1726906197,
+    "exp": 1726942197,
+    "sub": "oauth2|World-ID|0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3",
+    "sid": "4gEaFD2f6zFgqt20MeFWjWe1NS5mGm9h"
+  }
+}
+2024-09-21T08:09:58.598Z info: Extracted World ID info {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  }
+}
+2024-09-21T08:09:58.600Z info: Generated new JWT token {
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDYxOTgsImV4cCI6MTcyNjkwOTc5OH0.lOtaaMISiJrZvO8gihNheyc7UGAw82XmSZas8oIvgrE"
+}
+2024-09-21T08:09:58.601Z info: Decoded generated JWT {
+  "decodedJWT": {
+    "worldIdInfo": {
+      "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    "iat": 1726906198,
+    "exp": 1726909798
+  }
+}
+2024-09-21T08:10:11.139Z info: Received request to store data 
+2024-09-21T08:10:11.140Z info: Received data {
+  "data": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726906185168,
+      "pseudo_id": "user_gk0q43rc6",
+      "user_agent_hash": "-6e47b3f5"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726906202546,
+      "pseudo_id": "user_wtvfrl64d",
+      "user_agent_hash": "-6e47b3f5"
+    }
+  ]
+}
+2024-09-21T08:10:11.140Z info: Full request headers {
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "content-length": "291",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+  "content-type": "application/json",
+  "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3b3JsZElkSW5mbyI6eyJudWxsaWZpZXJfaGFzaCI6IjB4MGM0NGY0NzZlNTgzZTQ3NjU0YzlhMjc2YTc0ZWFmMjg0MDVmOWNkZTY4NzZjMjdjOGI2NGQ4ZmNlNDQwY2FjMyJ9LCJpYXQiOjE3MjY5MDYxOTgsImV4cCI6MTcyNjkwOTc5OH0.lOtaaMISiJrZvO8gihNheyc7UGAw82XmSZas8oIvgrE",
+  "accept": "*/*",
+  "origin": "chrome-extension://mmmaljibofhlnclinlnlphhbobkjfanf",
+  "sec-fetch-site": "none",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-dest": "empty",
+  "accept-encoding": "gzip, deflate, br, zstd",
+  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+2024-09-21T08:10:11.140Z info: Full token payload {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726906198,
+  "exp": 1726909798
+}
+2024-09-21T08:10:11.140Z info: Owner nullifier hash {
+  "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+}
+2024-09-21T08:10:11.140Z info: Storing data on IPFS {
+  "jsonString": "[{\"domain\":\"id.worldcoin.org\",\"event_name\":\"page_view\",\"event_timestamp\":1726906185168,\"pseudo_id\":\"user_gk0q43rc6\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"},{\"domain\":\"www.ntu.edu.sg\",\"event_name\":\"page_view\",\"event_timestamp\":1726906202546,\"pseudo_id\":\"user_wtvfrl64d\",\"user_agent_hash\":\"-6e47b3f5\",\"ownerNullifierHash\":\"0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3\"}]"
+}
+2024-09-21T08:10:11.206Z info: Stored data with CID {
+  "cid": "QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw"
+}
+2024-09-21T08:10:11.210Z info: Added new CID to database: {
+  "cid": "QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw"
+}
+2024-09-21T08:10:11.210Z info: Current contents of cids.json: {
+  "cids": "[\n  \"QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH\",\n  \"QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7\",\n  \"QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw\"\n]"
+}
+2024-09-21T08:10:11.210Z info: Stored data with CID {
+  "cid": "QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw"
+}
+2024-09-21T08:11:01.864Z info: Received request to retrieve data 
+2024-09-21T08:11:01.864Z info: Decoded token: {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726906198,
+  "exp": 1726909798
+}
+2024-09-21T08:11:01.873Z info: Raw data from IPFS: {
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,105,100,46,119,111,114,108,100,99,111,105,110,46,111,114,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,53,54,51,49,53,50,51,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,56,48,53,54,112,102,109,56,122,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:11:01.873Z info: Parsed data from IPFS: {
+  "parsedData": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726905631523,
+      "pseudo_id": "user_8056pfm8z",
+      "user_agent_hash": "-6e47b3f5",
+      "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    }
+  ]
+}
+2024-09-21T08:11:01.878Z info: Raw data from IPFS: {
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,110,117,115,46,101,100,117,46,115,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,53,54,57,48,53,52,52,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,54,57,107,99,100,56,116,98,48,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:11:01.878Z info: Parsed data from IPFS: {
+  "parsedData": [
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726905690544,
+      "pseudo_id": "user_69kcd8tb0",
+      "user_agent_hash": "-6e47b3f5",
+      "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    }
+  ]
+}
+2024-09-21T08:11:01.880Z info: Raw data from IPFS: {
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,105,100,46,119,111,114,108,100,99,111,105,110,46,111,114,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,54,49,56,53,49,54,56,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,103,107,48,113,52,51,114,99,54,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,44,123,34,100,111,109,97,105,110,34,58,34,119,119,119,46,110,116,117,46,101,100,117,46,115,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,54,50,48,50,53,52,54,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,119,116,118,102,114,108,54,52,100,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:11:01.881Z info: Parsed data from IPFS: {
+  "parsedData": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726906185168,
+      "pseudo_id": "user_gk0q43rc6",
+      "user_agent_hash": "-6e47b3f5",
+      "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726906202546,
+      "pseudo_id": "user_wtvfrl64d",
+      "user_agent_hash": "-6e47b3f5",
+      "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    }
+  ]
+}
+2024-09-21T08:11:01.881Z info: Retrieved data: {
+  "allData": [
+    {
+      "0": {
+        "domain": "id.worldcoin.org",
+        "event_name": "page_view",
+        "event_timestamp": 1726905631523,
+        "pseudo_id": "user_8056pfm8z",
+        "user_agent_hash": "-6e47b3f5",
+        "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+      },
+      "id": "QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH"
+    },
+    {
+      "0": {
+        "domain": "nus.edu.sg",
+        "event_name": "page_view",
+        "event_timestamp": 1726905690544,
+        "pseudo_id": "user_69kcd8tb0",
+        "user_agent_hash": "-6e47b3f5",
+        "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+      },
+      "id": "QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7"
+    },
+    {
+      "0": {
+        "domain": "id.worldcoin.org",
+        "event_name": "page_view",
+        "event_timestamp": 1726906185168,
+        "pseudo_id": "user_gk0q43rc6",
+        "user_agent_hash": "-6e47b3f5",
+        "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+      },
+      "1": {
+        "domain": "www.ntu.edu.sg",
+        "event_name": "page_view",
+        "event_timestamp": 1726906202546,
+        "pseudo_id": "user_wtvfrl64d",
+        "user_agent_hash": "-6e47b3f5",
+        "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+      },
+      "id": "QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw"
+    }
+  ],
+  "errors": []
+}
+2024-09-21T08:11:22.401Z info: Received request to retrieve data 
+2024-09-21T08:11:22.401Z info: Decoded token: {
+  "worldIdInfo": {
+    "nullifier_hash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+  },
+  "iat": 1726906198,
+  "exp": 1726909798
+}
+2024-09-21T08:11:22.408Z info: Raw data from IPFS: {
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,105,100,46,119,111,114,108,100,99,111,105,110,46,111,114,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,53,54,51,49,53,50,51,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,56,48,53,54,112,102,109,56,122,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:11:22.408Z info: Parsed data from IPFS: {
+  "parsedData": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726905631523,
+      "pseudo_id": "user_8056pfm8z",
+      "user_agent_hash": "-6e47b3f5",
+      "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    }
+  ]
+}
+2024-09-21T08:11:22.412Z info: Raw data from IPFS: {
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,110,117,115,46,101,100,117,46,115,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,53,54,57,48,53,52,52,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,54,57,107,99,100,56,116,98,48,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:11:22.413Z info: Parsed data from IPFS: {
+  "parsedData": [
+    {
+      "domain": "nus.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726905690544,
+      "pseudo_id": "user_69kcd8tb0",
+      "user_agent_hash": "-6e47b3f5",
+      "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    }
+  ]
+}
+2024-09-21T08:11:22.415Z info: Raw data from IPFS: {
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,105,100,46,119,111,114,108,100,99,111,105,110,46,111,114,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,54,49,56,53,49,54,56,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,103,107,48,113,52,51,114,99,54,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,44,123,34,100,111,109,97,105,110,34,58,34,119,119,119,46,110,116,117,46,101,100,117,46,115,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,54,50,48,50,53,52,54,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,119,116,118,102,114,108,54,52,100,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:11:22.415Z info: Parsed data from IPFS: {
+  "parsedData": [
+    {
+      "domain": "id.worldcoin.org",
+      "event_name": "page_view",
+      "event_timestamp": 1726906185168,
+      "pseudo_id": "user_gk0q43rc6",
+      "user_agent_hash": "-6e47b3f5",
+      "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    },
+    {
+      "domain": "www.ntu.edu.sg",
+      "event_name": "page_view",
+      "event_timestamp": 1726906202546,
+      "pseudo_id": "user_wtvfrl64d",
+      "user_agent_hash": "-6e47b3f5",
+      "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+    }
+  ]
+}
+2024-09-21T08:11:22.415Z info: Retrieved data: {
+  "allData": [
+    {
+      "0": {
+        "domain": "id.worldcoin.org",
+        "event_name": "page_view",
+        "event_timestamp": 1726905631523,
+        "pseudo_id": "user_8056pfm8z",
+        "user_agent_hash": "-6e47b3f5",
+        "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+      },
+      "id": "QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH"
+    },
+    {
+      "0": {
+        "domain": "nus.edu.sg",
+        "event_name": "page_view",
+        "event_timestamp": 1726905690544,
+        "pseudo_id": "user_69kcd8tb0",
+        "user_agent_hash": "-6e47b3f5",
+        "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+      },
+      "id": "QmdYez44jVNgjmWQXH8xbAB6TKE2q62XiCeNkDbic8Kim7"
+    },
+    {
+      "0": {
+        "domain": "id.worldcoin.org",
+        "event_name": "page_view",
+        "event_timestamp": 1726906185168,
+        "pseudo_id": "user_gk0q43rc6",
+        "user_agent_hash": "-6e47b3f5",
+        "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+      },
+      "1": {
+        "domain": "www.ntu.edu.sg",
+        "event_name": "page_view",
+        "event_timestamp": 1726906202546,
+        "pseudo_id": "user_wtvfrl64d",
+        "user_agent_hash": "-6e47b3f5",
+        "ownerNullifierHash": "0x0c44f476e583e47654c9a276a74eaf28405f9cde6876c27c8b64d8fce440cac3"
+      },
+      "id": "QmSngZxbzTmnNqyex4aj6Lbgs5M7GoaJJXrrvAZBUV9DWw"
+    }
+  ],
+  "errors": []
+}

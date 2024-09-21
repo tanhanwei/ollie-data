@@ -6,6 +6,8 @@ const winston = require('winston');
 const jwt = require('jsonwebtoken');
 const { expressjwt: expressJwt } = require('express-jwt');
 const jwksRsa = require('jwks-rsa');
+const fs = require('fs').promises;
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -55,6 +57,19 @@ const checkJwt = expressJwt({
   algorithms: ['RS256']
 });
 
+// CID storage file path
+const CID_FILE_PATH = path.join(__dirname, 'cids.json');
+
+// New function to log CID file contents
+async function logCIDFile() {
+  try {
+    const cids = await fs.readFile(CID_FILE_PATH, 'utf8');
+    logger.info('Current contents of cids.json:', { cids });
+  } catch (error) {
+    logger.error('Error reading cids.json:', { error: error.message });
+  }
+}
+
 // Helper function to store data on IPFS
 async function storeDataOnIPFS(data) {
   try {
@@ -71,23 +86,53 @@ async function storeDataOnIPFS(data) {
 
 // Helper function to retrieve data from IPFS
 async function retrieveDataFromIPFS(cid) {
-  let rawData = '';
+    let rawData = '';
+    try {
+      const stream = ipfs.cat(cid);
+      for await (const chunk of stream) {
+        rawData += chunk.toString();
+      }
+      logger.info('Raw data from IPFS:', { rawData });
+      if (!rawData) {
+        throw new Error('No data retrieved from IPFS');
+      }
+      
+      // Check if the data is a comma-separated list of ASCII codes
+      if (rawData.match(/^[\d,]+$/)) {
+        rawData = String.fromCharCode(...rawData.split(','));
+      }
+      
+      const parsedData = JSON.parse(rawData);
+      logger.info('Parsed data from IPFS:', { parsedData });
+      return parsedData;
+    } catch (error) {
+      logger.error('Error retrieving or parsing data from IPFS', { error: error.message, cid, rawData });
+      throw error;
+    }
+  }
+
+// Helper function to get all CIDs
+async function getAllCIDsFromDatabase() {
   try {
-    const stream = ipfs.cat(cid);
-    for await (const chunk of stream) {
-      rawData += chunk.toString();
-    }
-    logger.info('Raw data from IPFS:', { rawData });
-    if (!rawData) {
-      throw new Error('No data retrieved from IPFS');
-    }
-    const parsedData = JSON.parse(rawData);
-    logger.info('Parsed data from IPFS:', { parsedData });
-    return parsedData;
+    const data = await fs.readFile(CID_FILE_PATH, 'utf8');
+    return JSON.parse(data);
   } catch (error) {
-    logger.error('Error retrieving or parsing data from IPFS', { error: error.message, cid, rawData });
+    if (error.code === 'ENOENT') {
+      // File doesn't exist, create it with an empty array
+      await fs.writeFile(CID_FILE_PATH, '[]');
+      return [];
+    }
     throw error;
   }
+}
+
+// Helper function to add CID to database
+async function addCIDToDatabase(cid) {
+  const cids = await getAllCIDsFromDatabase();
+  cids.push(cid);
+  await fs.writeFile(CID_FILE_PATH, JSON.stringify(cids, null, 2));
+  logger.info('Added new CID to database:', { cid });
+  await logCIDFile();
 }
 
 // New endpoint for user authentication
@@ -125,7 +170,7 @@ app.post('/store-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }
     const data = req.body;
     logger.info('Received data', { data });
     logger.info('Full request headers', req.headers);
-    logger.info('Full token payload', req.auth); // Changed from req.user to req.auth
+    logger.info('Full token payload', req.auth);
 
     if (!req.auth || !req.auth.worldIdInfo) {
       logger.error('Token payload:', JSON.stringify(req.auth, null, 2));
@@ -142,6 +187,7 @@ app.post('/store-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }
     }));
 
     const cid = await storeDataOnIPFS(dataWithOwner);
+    await addCIDToDatabase(cid);
     logger.info('Stored data with CID', { cid });
     res.json({ success: true, cid });
   } catch (error) {
@@ -152,26 +198,28 @@ app.post('/store-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }
 
 // Route to retrieve data
 app.get('/retrieve-data', expressJwt({ secret: JWT_SECRET, algorithms: ['HS256'] }), async (req, res) => {
-  logger.info('Decoded token:', req.auth);
-  try {
-    const allCIDs = await getAllCIDsFromDatabase(); // You need to implement this function
-    let allData = [];
-    for (const cid of allCIDs) {
-      const data = await retrieveDataFromIPFS(cid);
-      allData.push({ ...data, id: cid });
+    logger.info('Received request to retrieve data');
+    logger.info('Decoded token:', req.auth);
+    try {
+      const allCIDs = await getAllCIDsFromDatabase();
+      let allData = [];
+      let errors = [];
+      for (const cid of allCIDs) {
+        try {
+          const data = await retrieveDataFromIPFS(cid);
+          allData.push({ ...data, id: cid });
+        } catch (error) {
+          logger.error(`Error retrieving data for CID: ${cid}`, { error: error.message });
+          errors.push({ cid, error: error.message });
+        }
+      }
+      logger.info('Retrieved data:', { allData, errors });
+      res.json({ success: true, data: allData, errors });
+    } catch (error) {
+      logger.error('Error retrieving data', { error: error.message });
+      res.status(500).json({ success: false, error: error.message });
     }
-    res.json({ success: true, data: allData });
-  } catch (error) {
-    logger.error('Error retrieving data', { error: error.message });
-    res.status(500).json({ success: false, error: error.message });
-  }
-});
-
-// Helper function to get all CIDs (you need to implement this based on how you're storing CIDs)
-async function getAllCIDsFromDatabase() {
-  // This is a placeholder. You need to implement this based on your storage method.
-  return ['cid1', 'cid2', 'cid3'];
-}
+  });
 
 // Custom error handler
 app.use((err, req, res, next) => {

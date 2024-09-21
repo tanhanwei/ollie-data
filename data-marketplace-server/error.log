@@ -475,3 +475,11 @@
   "error": "User information not found in token",
   "stack": "Error: User information not found in token\n    at /Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/server.js:132:13\n    at Layer.handle [as handle_request] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/layer.js:95:5)\n    at Immediate.next [as _onImmediate] (/Users/hanweitan/Documents/GithubProject/world-id-marketplace/privacy-preserving-marketplace/data-marketplace-server/node_modules/express/lib/router/route.js:149:13)\n    at process.processImmediate (node:internal/timers:478:21)"
 }
+2024-09-21T08:02:59.900Z error: Error retrieving or parsing data from IPFS {
+  "error": "Unexpected non-whitespace character after JSON at position 2 (line 1 column 3)",
+  "cid": "QmPSQzLoDdTJVCDRUCU4iEx6xVj7UWBRCJbHVFjKWXf5SH",
+  "rawData": "91,123,34,100,111,109,97,105,110,34,58,34,105,100,46,119,111,114,108,100,99,111,105,110,46,111,114,103,34,44,34,101,118,101,110,116,95,110,97,109,101,34,58,34,112,97,103,101,95,118,105,101,119,34,44,34,101,118,101,110,116,95,116,105,109,101,115,116,97,109,112,34,58,49,55,50,54,57,48,53,54,51,49,53,50,51,44,34,112,115,101,117,100,111,95,105,100,34,58,34,117,115,101,114,95,56,48,53,54,112,102,109,56,122,34,44,34,117,115,101,114,95,97,103,101,110,116,95,104,97,115,104,34,58,34,45,54,101,52,55,98,51,102,53,34,44,34,111,119,110,101,114,78,117,108,108,105,102,105,101,114,72,97,115,104,34,58,34,48,120,48,99,52,52,102,52,55,54,101,53,56,51,101,52,55,54,53,52,99,57,97,50,55,54,97,55,52,101,97,102,50,56,52,48,53,102,57,99,100,101,54,56,55,54,99,50,55,99,56,98,54,52,100,56,102,99,101,52,52,48,99,97,99,51,34,125,93"
+}
+2024-09-21T08:02:59.901Z error: Error retrieving data {
+  "error": "Unexpected non-whitespace character after JSON at position 2 (line 1 column 3)"
+}
